@@ -27,8 +27,8 @@ class source:
         self.priority = 1
         self.language = ['en']
         self.domains = ['xmovies8.tv', 'xmovies8.ru', 'xmovies8.es']
-        self.base_link = 'https://xmovies8.es'
-        self.search_link = 'https://search.' + self.domains[2] +'/?q=%s&page=1'
+        self.base_link = 'https://xmovies8.nz'
+        self.search_link = 'https://search.xmovies8.es/?q=%s&page=1'
 
     def matchAlias(self, title, aliases):
         try:
@@ -78,7 +78,7 @@ class source:
 
             if r:
                 url = client.parseDOM(r, 'a', ret='href')[0]
-                url = re.sub(r'\/\/xmovies8\.es', '', url)
+                url = re.sub(r'\/\/xmovies8\.nz', '', url)
             return url
         except:
             return

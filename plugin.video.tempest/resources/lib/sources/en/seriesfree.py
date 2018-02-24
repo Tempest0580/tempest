@@ -85,7 +85,7 @@ class source:
             result = dom[0].content
             
             links = re.compile('<tr\s*>\s*<td><i\s+class="fa fa-youtube link-logo"></i>([^<]+).*?href="([^"]+)"\s+class="watch',re.DOTALL).findall(result)         
-            for link in links[:5]:
+            for link in links:
                 try:
                     url2 = urlparse.urljoin(self.base_link, link[1])
                     for i in range(2):
@@ -106,7 +106,6 @@ class source:
             return sources
         except:
             return sources
-
 
     def resolve(self, url):
         return url

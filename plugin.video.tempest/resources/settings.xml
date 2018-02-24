@@ -3,7 +3,7 @@
     <category label="32310">
         <setting id="appearance.alt" type="action" label="32311" default="-" option="close" action="RunPlugin(plugin://plugin.video.tempest/?action=artwork)" visible="!System.HasAddon(script.tempest.artwork)" />
         <setting id="appearance.1" type="select" label="32311" values="Exuary|Tempest" default="Tempest" visible="System.HasAddon(script.tempest.artwork)" />
-        <setting id="scrapers.timeout.1" type="slider" label="32312" default="30" range="10,60" option="int" />
+        <setting id="scrapers.timeout.1" type="slider" label="32312" default="60" range="10,60" option="int" />
         <setting id="trakt.user" type="text" default="" visible="false" />
         <setting id="indicators.alt" type="enum" label="32313" lvalues="32314|32315" default="1" visible="!eq(-1,)" />
         <setting id="indicators" type="enum" label="32313" lvalues="32314" default="0" visible="eq(-2,)" />
@@ -11,10 +11,10 @@
         <setting id="providers.lang" visible="false" type="select" label="32360" values="English" default="English" />
         <setting id="fanart" type="bool" label="32318" default="true" />
         <setting type="lsep" label="Specials" />
-        <setting id="show_specials" type="bool" label="Show Special Episodes" default="false" />
+        <setting id="show_specials" type="bool" label="Show Special Episodes" default="true" />
         <setting type="lsep" label="Futures" />
-        <setting id="future_seasons" type="bool" label="Future Seasons" default="false" />
-        <setting id="future_episodes" type="bool" label="Future Episodes" default="false" />
+        <setting id="future_seasons" type="bool" label="Future Seasons" default="true" />
+        <setting id="future_episodes" type="bool" label="Future Episodes" default="true" />
         <setting id="episodes_colours" type="enum" label="Future Episodes Color" lvalues="32589|32590|32591|32592|32593|32594|32595|32596|32597|32598" default="6" />
         <setting type="lsep" label="32319" />
         <setting id="movie.widget" type="enum" label="32320" lvalues="32302|32321|32322|32323|32324|32580" default="1" />
@@ -28,7 +28,7 @@
         <setting id="progress.dialog" type="enum" label="32335" lvalues="32336|32337" default="0" />
         <setting id="prem.identify" type="enum" label="32588" lvalues="32589|32590|32591|32592|32593|32594|32595|32596|32597|32598" default="0" />
         <setting type="lsep" label="32338" />
-        <setting id="hosts.quality" type="enum" label="32339" values="4K|1440p|1080p|720p|480p" default="2" />
+        <setting id="hosts.quality" type="enum" label="32339" values="4K|1440p|1080p|720p|480p" default="0" />
         <setting id="autoplay.sd" type="bool" label="32340" default="false" />
         <setting id="sources.extrainfo" type="bool" label="32587" default="true" />
         <setting id="hosts.captcha" type="bool" label="32341" default="true" />
@@ -87,22 +87,17 @@
         <setting id="provider.putlocker" type="bool" label="PUTLOCKER" default="true" />
         <setting id="provider.putlockers" type="bool" label="PUTLOCKERS" default="true" />
         <setting id="provider.releasebb" type="bool" label="RELEASEBB" default="true" />
-        <setting id="provider.rlsmovies" type="bool" label="RLSMOVIES" default="true" />
         <setting id="provider.sceper" type="bool" label="SCEPER" default="true" />
         <setting id="provider.series9" type="bool" label="SERIES9" default="true" />
         <setting id="provider.seriescr" type="bool" label="SERIESCR" default="true" />
         <setting id="provider.seriesfree" type="bool" label="SERIESFREE" default="true" />
-        <setting id="provider.sezonlukdizi" type="bool" label="SEZONLUKDIZI" default="true" />
         <setting id="provider.solarmovie" type="bool" label="SOLARMOVIE" default="true" />
         <setting id="provider.tvbox" type="bool" label="TVBOX" default="true" />
         <setting id="provider.tvrelease" type="bool" label="TVRELEASE" default="true" />
         <setting id="provider.ultrahd" type="bool" label="ULTRAHD" default="true" />
         <setting id="provider.videoscraper" type="bool" label="VIDEOSCRAPER" default="true" />
-        <setting id="provider.vumoo" type="bool" label="VUMOO" default="true" />
-        <setting id="provider.watch32" type="bool" label="WATCH32" default="true" />
         <setting id="provider.watchseries" type="bool" label="WATCHSERIES" default="true" />
         <setting id="provider.wrzcraft" type="bool" label="WRZCRAFT" default="true" />
-        <setting id="provider.xmovies" type="bool" label="XMOVIES" default="true" />
         <setting id="provider.xmovies8fm" type="bool" label="XMOVIES8FM" default="true" />
         <setting id="provider.ymovies" type="bool" label="YMOVIES" default="true" />
     </category>

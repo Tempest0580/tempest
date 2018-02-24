@@ -34,7 +34,7 @@ class source:
         self.language = ['en']
         self.domains = ['sezonlukdizi.net', 'sezonlukdizi.com']
         self.base_link = 'http://sezonlukdizi.net'
-        self.search_link = '/js/series1.js'
+        self.search_link = 'diziler/%s.html'
         self.video_link = '/ajax/dataEmbed.asp'
 
     def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):
