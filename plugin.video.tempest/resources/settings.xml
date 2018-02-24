@@ -71,14 +71,12 @@
         <setting id="provider.iiddl" type="bool" label="IIDDL" default="true" />
         <setting id="provider.imdark" type="bool" label="IMDARK" default="true" />
         <setting id="provider.library" type="bool" label="LIBRARY" default="true" />
-        <setting id="provider.mehliz" type="bool" label="MEHLIZ" default="true" />
         <setting id="provider.miradetodo" type="bool" label="MIRADETODO" default="true" />
         <setting id="provider.movie4kis" type="bool" label="MOVIE4KIS" default="true" />
         <setting id="provider.movie4korg" type="bool" label="MOVIE4KORG" default="true" />
         <setting id="provider.movie4uch" type="bool" label="MOVIE4UCH" default="true" />
         <setting id="provider.moviesgold" type="bool" label="MOVIESGOLD" default="true" />
         <setting id="provider.movietime" type="bool" label="MOVIETIME" default="true" />
-        <setting id="provider.mzmovies" type="bool" label="MZMOVIES" default="true" />\
         <setting id="provider.phazeddl" type="bool" label="PHAZEDLL" default="true" />
         <setting id="provider.plocker" type="bool" label="PLOCKER" default="true" />
         <setting id="provider.popcorn" type="bool" label="POPCORN" default="true" />
