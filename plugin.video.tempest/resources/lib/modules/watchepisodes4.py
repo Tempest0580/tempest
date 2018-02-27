@@ -18,8 +18,13 @@
 
 
 import requests
-import sys
+import re
+
+
+
 from bs4 import BeautifulSoup
+
+mozhdr = {'User-Agent': 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3'}
 
 class source:
     def __init__(self):
@@ -30,27 +35,40 @@ class source:
         self.search = '/%s'
 
     def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):
-        pass
+        try:
+            url = {'imdb': imdb, 'tvdb': tvdb, 'tvshowtitle': tvshowtitle, 'year': year}
+            return url
+        except:
+            return
 
     def episode(self, url, imdb, tvdb, title, premiered, season, episode):
-        pass
+        try:
+            if url == None: return
+
+            search_id = cleantitle.get(title.lower())
+
+            url = requests.get(url)
+            url = BeautifulSoup(url.content, 'html.parser')
+            url = url.find_all('div', class_='el-item')
+            url = re.findall(r'href="(.+?)" title="(.+?)"', str(url))
+
+            for url, name in url:
+                print url, name
+        except:
+            return
 
     def sources(self, url, hostDict, hostprDict):
-        pass
-
-
-with requests.Session() as s:
-    #url = 'http://www.watchepisodes4.com/%s' % 'arrow'
-    #p = s.get(url)
-    #r = BeautifulSoup(p.content, 'html.parser')
-    #r = r.find_all('div', class_='el-item')
-    #print r
-    search = 'arrow'
-    search = search.replace(' ', '-')
-    url = 'http://www.watchepisodes4.com/%s' % search
-    url = requests.get(url)
-    url = BeautifulSoup(url.content, 'html.parser')
-    url = url.find_all('a', attrs={'el-item', 'href'})
-
-    for url in url:
         print url
+
+
+search = 'arrow'
+
+url = 'http://www.watchepisodes4.com/%s' % search
+url = requests.get(url)
+url = BeautifulSoup(url.content, 'html.parser')
+url = url.find_all('div', class_='el-item')
+url = re.findall(r'href="(.+?)" title="(.+?)"', str(url))
+
+for url, name in url:
+
+    print url, name
