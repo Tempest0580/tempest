@@ -43,9 +43,10 @@
         <setting id="provider.123hulu" type="bool" label="123HULU" default="true" />
         <setting id="provider.123movies" type="bool" label="123MOVIES" default="true" />
         <setting id="provider.123moviesc" type="bool" label="123MOVIESC" default="true" />
+        <setting id="provider.123movieser" type="bool" label="123MOVIESER" default="true" />
         <setting id="provider.123netflix" type="bool" label="123NETFLIX" default="true" />
         <setting id="provider.123rarbg" type="bool" label="123RARBG" default="true" />
-        <setting id="provider.1080pmovies" type="bool" label="1080PMOVIES" default="true" />
+        <setting id="provider.1080pmovie" type="bool" label="1080PMOVIE" default="true" />
         <setting id="provider.allrls" type="bool" label="ALLRLS" default="true" />
         <setting id="provider.bestmoviez" type="bool" label="BESTMOVIEZ" default="true" />
         <setting id="provider.beetv" type="bool" label="BEETV" default="true" />
@@ -62,6 +63,7 @@
         <setting id="provider.dwatchseries" type="bool" label="DWATCHSERIES" default="true" />
         <setting id="provider.e123movies" type="bool" label="E123MOVIES" default="true" />
         <setting id="provider.einthusan" type="bool" label="EINTHUSAN" default="true" />
+        <setting id="provider.filpursuit" type="bool" label="FILEPURSUIT" default="true" />
         <setting id="provider.filmxy" type="bool" label="FILMXY" default="true" />
         <setting id="provider.fmovies" type="bool" label="FMOVIES" default="true" />
         <setting id="provider.genvideos" type="bool" label="GENVIDEOS" default="true" />
@@ -89,6 +91,7 @@
         <setting id="provider.series9" type="bool" label="SERIES9" default="true" />
         <setting id="provider.seriescr" type="bool" label="SERIESCR" default="true" />
         <setting id="provider.seriesfree" type="bool" label="SERIESFREE" default="true" />
+        <setting id="provider.soaptv" type="bool" label="SOAPTV" default="true" />
         <setting id="provider.solarmovie" type="bool" label="SOLARMOVIE" default="true" />
         <setting id="provider.tvbox" type="bool" label="TVBOX" default="true" />
         <setting id="provider.tvrelease" type="bool" label="TVRELEASE" default="true" />

@@ -28,7 +28,7 @@ class source:
         self.priority = 0
         self.language = ['en']
         self.domain = 'beetv.to'
-        self.domains = 'http://beetv.to/'
+        self.base_link = 'http://beetv.to/'
 
     def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):
         try:
@@ -48,7 +48,7 @@ class source:
         sources = []
         try:
             with requests.Session() as s:
-                episode_link = "http://beetv.to/" + cleantitle.geturl(url['tvshowtitle']) + "-s" + url['season'] + "-e" + url['episode']
+                episode_link = self.base_link + cleantitle.geturl(url['tvshowtitle']) + "-s" + url['season'] + "-e" + url['episode']
                 p = s.get(episode_link)
                 soup = BeautifulSoup(p.text, 'html.parser')
                 iframes = soup.findAll('iframe')

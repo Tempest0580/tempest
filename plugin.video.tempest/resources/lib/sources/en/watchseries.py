@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 '''
-    Tempest Add-on
+    Covenant Add-on
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -18,106 +18,90 @@
 '''
 
 
-import re,urllib,urlparse,json,base64,xbmc
+import re,urllib,urlparse,json,base64
 
 from resources.lib.modules import cleantitle
 from resources.lib.modules import client
 from resources.lib.modules import source_utils
 from resources.lib.modules import dom_parser
-from resources.lib.modules import directstream
+#from resources.lib.modules import log_utils
 
 class source:
     def __init__(self):
         self.priority = 0
         self.language = ['en']
-        self.domains = ['watch-series.co','watch-series.ru', 'watch-series.io']
-        self.base_link = 'https://watch-series.io'
-        self.search_link = '/search.html?keyword=%s'
+        self.domains = ['watch-series.co','watch-series.ru']
+        self.base_link = 'https://watch-series.co'
+        self.search_link = 'search.html?keyword=%s'
 
     def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):
         try:
-            data = {'tvshowtitle': tvshowtitle, 'year': year}
-            return urllib.urlencode(data)
-
-        except Exception:
+            url = urlparse.urljoin(self.base_link, self.search_link % urllib.quote_plus(cleantitle.query(tvshowtitle)))
+            self.tvshowtitle = tvshowtitle
+            return url
+        except:
             return
 
     def episode(self, url, imdb, tvdb, title, premiered, season, episode):
         try:
-            data = urlparse.parse_qs(url)
-            data = dict((i, data[i][0]) for i in data)
-            data.update({'season': season, 'episode': episode, 'title': title, 'premiered': premiered})
-
-            return urllib.urlencode(data)
-
-        except Exception:
+            if url == None: return
+            result = client.request(url)
+            express = '''<a\s*href="([^"]+)"\s*class="videoHname\s*title"\s*title="%s - Season %s''' % (self.tvshowtitle, season)
+            get_season = re.findall(express, result, flags=re.I)[0]
+            url = urlparse.urljoin(self.base_link, get_season + '/season')
+            result = client.request(url)
+            express = '''<div class="vid_info"><span><a href="([^"]+)" title="([^"]+)" class="videoHname">'''
+            get_ep = re.findall(express, result, flags=re.I)
+            epi = [i[0] for i in get_ep if title.lower() in i[1].lower()]
+            get_ep = urlparse.urljoin(self.base_link, epi[0])
+            url = get_ep.encode('utf-8')
+            return url
+        except:
             return
 
     def sources(self, url, hostDict, hostprDict):
         try:
             sources = []
+            if url == None: return sources
 
-            data = urlparse.parse_qs(url)
-            data = dict((i, data[i][0]) for i in data)
+            hostDict += ['akamaized.net', 'google.com', 'picasa.com', 'blogspot.com']
+            result = client.request(url, timeout=10)
 
-            url = self.__get_episode_url(data)
-
-            result = client.request(url)
-
-            dom = re.findall('data-video="(.+?)"', result)
-            urls = [i if i.startswith('https') else 'https:' + i for i in dom]
+            dom = dom_parser.parse_dom(result, 'a', req='data-video')
+            urls = [i.attrs['data-video'] if i.attrs['data-video'].startswith('https') else 'https:' + i.attrs['data-video'] for i in dom]
 
             for url in urls:
+                dom = []
                 if 'vidnode.net' in url:
-                    link = url
-                    files = []
-
-                    while True:
-                        try:
-                            try:r = client.request(link)
-                            except: continue
-
-                            files.extend(re.findall("(?!file: '.+?',label: 'Auto')file: '(.+?)',label: '(.+?)'", r))
-
-                            link = re.findall('window\.location = \"(.+?)\";', r)[0]
-
-                            if not 'vidnode' in link:
-                                break
-
-                        except Exception:
-                            break
-
-                    for i in files:
-                        try:
-                            video = i[0]
-                            quality = i[1]
-                            host = 'CDN'
-
-                            if 'google' in video or 'blogspot' in video:
-                                pass
-
-                            sources.append({
-                                'source': host,
-                                'quality': source_utils.label_to_quality(quality),
-                                'language': 'en',
-                                'url': video,
-                                'direct': True,
-                                'debridonly': False
-                            })
-
-                        except:
-                            pass
-
-                else:
+                    result = client.request(url, timeout=10)
+                    dom = dom_parser.parse_dom(result, 'source', req=['src','label'])
+                    dom = [(i.attrs['src'] if i.attrs['src'].startswith('https') else 'https:' + i.attrs['src'], i.attrs['label']) for i in dom if i]
+                elif 'ocloud.stream' in url:
+                    result = client.request(url, timeout=10)
+                    base = re.findall('<base href="([^"]+)">', result)[0]
+                    hostDict += [base]
+                    dom = dom_parser.parse_dom(result, 'a', req=['href','id'])
+                    dom = [(i.attrs['href'].replace('./embed',base+'embed'), i.attrs['id']) for i in dom if i]
+                    dom = [(re.findall("var\s*ifleID\s*=\s*'([^']+)", client.request(i[0]))[0], i[1]) for i in dom if i]
+                if dom:
                     try:
-                        host = urlparse.urlparse(link.strip().lower()).netloc
+                        for r in dom:
+                            valid, hoster = source_utils.is_host_valid(r[0], hostDict)
 
-                        if not host in hostDict: raise Exception()
-
-                        host = client.replaceHTMLCodes(host)
-                        host = host.encode('utf-8')
-
-                        sources.append({'source': host, 'quality': 'SD', 'language': 'en', 'url': link, 'direct': False, 'debridonly': False})
+                            if not valid: continue
+                            quality = source_utils.label_to_quality(r[1])
+                            urls, host, direct = source_utils.check_directstreams(r[0], hoster)
+                            for x in urls:
+                                if direct: size = source_utils.get_size(x['url'])
+                                if size: sources.append({'source': host, 'quality': quality, 'language': 'en', 'url': x['url'], 'direct': direct, 'debridonly': False, 'info': size})
+                                else: sources.append({'source': host, 'quality': quality, 'language': 'en', 'url': x['url'], 'direct': direct, 'debridonly': False})
+                    except: pass
+                else:
+                    valid, hoster = source_utils.is_host_valid(url, hostDict)
+                    if not valid: continue
+                    try:
+                        url.decode('utf-8')
+                        sources.append({'source': hoster, 'quality': 'SD', 'language': 'en', 'url': url, 'direct': False, 'debridonly': False})
                     except:
                         pass
             return sources
@@ -126,31 +110,3 @@ class source:
 
     def resolve(self, url):
         return url
-
-    def __get_episode_url(self, data):
-        try:
-            path = self.search_link % urllib.quote_plus(cleantitle.query(data['tvshowtitle']))
-            url = urlparse.urljoin(self.base_link, path)
-
-            xbmc.log('__get_episode_url start url: ' + str(url))
-
-            response = client.request(url)
-
-            exp = 'href="([^"]+?)".+?videoHname.+?title="%s - Season %s"' % (data['tvshowtitle'], data['season'])
-            get_season = re.findall(exp, response, flags=re.I)[0]
-            url = urlparse.urljoin(self.base_link, get_season + '/season')
-
-            xbmc.log('__get_episode_url season url: ' + str(url))
-
-            response = client.request(url)
-
-            exp = 'href="([^"]+?)" title="(.+?Episode (?:%02d|%s):.+?)".+?videoHname' % (int(data['episode']), data['episode'])
-            episode = re.findall(exp, response)[0][0]
-            url = urlparse.urljoin(self.base_link, episode)
-
-            xbmc.log('__get_episode_url episode url: ' + str(url))
-
-            return url
-
-        except Exception:
-            return

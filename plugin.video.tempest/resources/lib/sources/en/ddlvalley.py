@@ -1,4 +1,3 @@
-# Needs Testing
 # -*- coding: utf-8 -*-
 
 '''
@@ -110,7 +109,7 @@ class source:
                     # Client Requests is causing a timeout on links for ddl valley, falling back on cfscrape
                     #r = client.request(item[1], headers=headers, cookie=cookie,  timeout=15)  
                     r = scraper.get(item[1]).content
-                    links = dom_parser2.parse_dom(r, 'a', req=['href','rel','data-wpel-link'])
+                    links = dom_parser2.parse_dom(r, 'a', req=['href','rel','data-wpel-link','target'])
                     links = [i.attrs['href'] for i in links]
                     if show:
                         links = [i for i in links if hdlr.lower() in i.lower()]

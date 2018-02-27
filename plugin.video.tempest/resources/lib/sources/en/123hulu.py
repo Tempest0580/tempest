@@ -55,12 +55,7 @@ class source:
             return
             
     def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):
-        try:
-            url = {'imdb': imdb, 'tvdb': tvdb, 'tvshowtitle': tvshowtitle, 'year': year}
-            url = urllib.urlencode(url)
-            return url
-        except:
-            return
+        return
 
     def episode(self, url, imdb, tvdb, title, premiered, season, episode):
         return

@@ -1,4 +1,3 @@
-# Needs testing
 # -*- coding: utf-8 -*-
 
 '''
