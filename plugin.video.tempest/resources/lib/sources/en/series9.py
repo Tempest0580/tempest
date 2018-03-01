@@ -23,13 +23,13 @@ from resources.lib.modules import cleantitle
 from resources.lib.modules import client
 from resources.lib.modules import directstream
 from resources.lib.modules import source_utils
-
+from resources.lib.modules import cfscrape
 
 class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['seriesonline.io','series9.io']
+        self.domains = ['seriesonline.io', 'www1.seriesonline.io', 'series9.io']
         self.base_link = 'https://series9.co'
         self.search_link = '/movie/search/%s'
 
@@ -48,7 +48,7 @@ class source:
             url = urllib.urlencode(url)
             return url
         except:
-            return        
+            return
 
     def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):
         try:
@@ -74,15 +74,21 @@ class source:
         try:
             title = cleantitle.normalize(title)
             search = '%s Season %d' % (title, int(season))
+
             url = urlparse.urljoin(self.base_link, self.search_link % cleantitle.geturl(search))
             r = client.request(url)
+
             r = client.parseDOM(r, 'div', attrs={'class': 'ml-item'})
             r = zip(client.parseDOM(r, 'a', ret='href'), client.parseDOM(r, 'a', ret='title'))
+
             r = [(i[0], i[1], re.findall('(.*?)\s+-\s+Season\s+(\d+)', i[1])) for i in r]
             r = [(i[0], i[1], i[2][0]) for i in r if len(i[2]) > 0]
             url = [i[0] for i in r if self.matchAlias(i[2][0], aliases) and i[2][1] == season][0]
+
             url = urlparse.urljoin(self.base_link, '%s/watching.html' % url)
+
             return url
+
         except:
             return
 
@@ -90,10 +96,13 @@ class source:
         try:
             title = cleantitle.normalize(title)
             url = urlparse.urljoin(self.base_link, self.search_link % cleantitle.geturl(title))
+
             r = client.request(url)
             r = client.parseDOM(r, 'div', attrs={'class': 'ml-item'})
             r = zip(client.parseDOM(r, 'a', ret='href'), client.parseDOM(r, 'a', ret='title'))
+
             results = [(i[0], i[1], re.findall('\((\d{4})', i[1])) for i in r]
+
             try:
                 r = [(i[0], i[1], i[2][0]) for i in results if len(i[2]) > 0]
                 url = [i[0] for i in r if self.matchAlias(i[1], aliases) and (year == i[2])][0]
@@ -105,6 +114,7 @@ class source:
                 url = [i[0] for i in results if self.matchAlias(i[1], aliases)][0]
 
             url = urlparse.urljoin(self.base_link, '%s/watching.html' % url)
+
             return url
         except:
             return
@@ -130,6 +140,7 @@ class source:
 
             r = client.request(url)
             r = client.parseDOM(r, 'div', attrs={'class': 'les-content'})
+
             if 'tvshowtitle' in data:
                 ep = data['episode']
                 links = client.parseDOM(r, 'a', attrs={'episode-data': ep}, ret='player-data')
@@ -184,6 +195,7 @@ class source:
                         host = urlparse.urlparse(link.strip().lower()).netloc
 
                         if not host in hostDict: raise Exception()
+
                         host = client.replaceHTMLCodes(host)
                         host = host.encode('utf-8')
 

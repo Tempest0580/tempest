@@ -2,6 +2,7 @@ import re
 import requests
 import xbmc
 from resources.lib.modules import cleantitle
+from bs4 import BeautifulSoup
 
 class source:
     def __init__(self):
@@ -12,9 +13,10 @@ class source:
         sources = []
 
     def movie(self, title, year, imdb):
+        sources = []
         try:
             url = self.base_link
-            html = requests.get(url,timeout=5).content
+            html = requests.get(url, timeout=5).content
             match = re.compile('<a href="(.+?)">(.+?)</a>').findall(html)
             for url,name in match:
                 new_title = name.split('20')[0]
@@ -31,14 +33,13 @@ class source:
                             qual = '480p'
                         else:
                             qual = 'SD'
-                        self.sources.append({'source': 'Direct', 'quality': qual, 'url': url,'direct': True, 'debrid': False})
-            return self.sources
-        except Exception as e:
-            print repr(e)
-            pass
-            return []      
+                        sources.append({'source': 'Direct', 'quality': qual, 'url': url,'direct': True, 'debrid': False})
+            return sources
+        except:
+            return url
 
     def episode(self, title, year, season, episode, imdb, tvdb):
+        sources = []
         try:
             url = self.base_link
             html = requests.get(url,timeout=5).content
@@ -64,10 +65,13 @@ class source:
                         else:
                             qual = 'SD'
                         url = self.base_link+url
-                        self.sources.append({'source': 'Direct', 'quality': qual, 'url': url,'direct': True,'debridonly': False})
-            return self.sources
-        except Exception as e:
-            print repr(e)
-            pass
-            return []
+                        sources.append({'source': 'Direct', 'quality': qual, 'url': url, 'direct': True, 'debridonly': False})
+            return sources
+        except:
+            return url
 
+    def sources(self, url, hostDict, hostprDict):
+        return url
+
+    def resolve(self, url):
+            return url

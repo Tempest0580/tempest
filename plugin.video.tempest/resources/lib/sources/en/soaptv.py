@@ -20,8 +20,9 @@
 
 import requests
 import sys
-from bs4 import BeautifulSoup
 import re
+from bs4 import BeautifulSoup
+
 
 class source:
     def __init__(self):
