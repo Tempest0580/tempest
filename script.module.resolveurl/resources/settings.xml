@@ -763,6 +763,7 @@
 		<setting id="YoutubeResolver_priority" type="number" label="Priority" default="100"/>
 		<setting id="YoutubeResolver_enabled" type="bool" label="Enabled" default="true"/>
 		<setting id="YoutubeResolver_login" type="bool" label="login" default="true" visible="false"/>
+		<setting label="This plugin calls the youtube addon -change settings there." type="lsep" />
 		<setting label="zstream.to" type="lsep"/>
 		<setting id="ZstreamResolver_priority" type="number" label="Priority" default="100"/>
 		<setting id="ZstreamResolver_enabled" type="bool" label="Enabled" default="true"/>
