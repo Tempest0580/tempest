@@ -62,7 +62,6 @@
         <setting id="provider.dizigold" type="bool" label="DIZIGOLD" default="true" />
         <setting id="provider.dwatchseries" type="bool" label="DWATCHSERIES" default="true" />
         <setting id="provider.e123movies" type="bool" label="E123MOVIES" default="true" />
-        <setting id="provider.einthusan" type="bool" label="EINTHUSAN" default="true" />
         <setting id="provider.filpursuit" type="bool" label="FILEPURSUIT" default="true" />
         <setting id="provider.filmxy" type="bool" label="FILMXY" default="true" />
         <setting id="provider.fmovies" type="bool" label="FMOVIES" default="true" />
@@ -77,7 +76,6 @@
         <setting id="provider.movie4kis" type="bool" label="MOVIE4KIS" default="true" />
         <setting id="provider.movie4korg" type="bool" label="MOVIE4KORG" default="true" />
         <setting id="provider.movie4uch" type="bool" label="MOVIE4UCH" default="true" />
-        <setting id="provider.moviesgold" type="bool" label="MOVIESGOLD" default="true" />
         <setting id="provider.movietime" type="bool" label="MOVIETIME" default="true" />
         <setting id="provider.phazeddl" type="bool" label="PHAZEDLL" default="true" />
         <setting id="provider.plocker" type="bool" label="PLOCKER" default="true" />

@@ -31,7 +31,7 @@ class source:
         self.priority = 1
         self.language = ['en']
         self.domains = ['fmovies.se', 'fmovies.to', 'bmovies.to', 'bmovies.is']
-        self.base_link = 'https://bmovies.to'
+        self.base_link = 'https://www1.fmovies.se'
         self.search_path = '/search?keyword=%s'
         self.film_path = '/film/%s'
         self.js_path = '/assets/min/public/all.js?5a0da8a9'

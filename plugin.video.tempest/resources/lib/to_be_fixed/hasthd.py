@@ -13,7 +13,6 @@ class source:
         sources = []
 
     def movie(self, title, year, imdb):
-        sources = []
         try:
             url = self.base_link
             html = requests.get(url, timeout=5).content
@@ -33,13 +32,12 @@ class source:
                             qual = '480p'
                         else:
                             qual = 'SD'
-                        sources.append({'source': 'Direct', 'quality': qual, 'url': url,'direct': True, 'debrid': False})
-            return sources
+                        self.sources.append({'source': 'Direct', 'quality': qual, 'url': url,'direct': True, 'debrid': False})
+            return self.sources
         except:
             return url
 
     def episode(self, title, year, season, episode, imdb, tvdb):
-        sources = []
         try:
             url = self.base_link
             html = requests.get(url,timeout=5).content
@@ -64,14 +62,8 @@ class source:
                             qual = '480p'
                         else:
                             qual = 'SD'
-                        url = self.base_link+url
-                        sources.append({'source': 'Direct', 'quality': qual, 'url': url, 'direct': True, 'debridonly': False})
-            return sources
+                        url = self.base_link + url
+                        self.sources.append({'source': 'Direct', 'quality': qual, 'url': url, 'direct': True, 'debridonly': False})
+            return self.sources
         except:
-            return url
-
-    def sources(self, url, hostDict, hostprDict):
-        return url
-
-    def resolve(self, url):
             return url
