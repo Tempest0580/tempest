@@ -136,8 +136,4 @@
         <setting type="lsep" label="32358" />
         <setting type="lsep" label="32359" />
     </category>
-    <category label="32616">
-        <setting id="addon_debug" type="bool" label="Enable Debug" default="false" />
-        <setting id="debug.location" type="enum" label="32617" lvalues="32618|32619" default="0" />
-    </category>
 </settings>

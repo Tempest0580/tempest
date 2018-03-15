@@ -36,6 +36,7 @@ class source:
         self.search_base_link = 'http://search.rlsbb.ru'
         self.search_cookie = 'serach_mode=rlsbb'
         self.search_link = '/lib/search526049.php?phrase=%s&pindex=1&content=true'
+        self.search_link2 = '/search/%s'
 
     def movie(self, imdb, title, localtitle, aliases, year):
         try:

@@ -78,7 +78,7 @@ class source:
 
             if r:
                 url = client.parseDOM(r, 'a', ret='href')[0]
-                url = re.sub(r'\/\/xmovies8\.es', '', url)
+                url = re.sub(r'\/\/xmovies8\.nz', '', url)
             return url
         except:
             return

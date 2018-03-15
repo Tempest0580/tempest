@@ -579,10 +579,6 @@ msgctxt "#32373"
 msgid "Force container refresh"
 msgstr ""
 
-msgctxt "#32374"
-msgid "Enable Debug"
-msgstr ""
-
 msgctxt "#32401"
 msgid "No stream available"
 msgstr ""

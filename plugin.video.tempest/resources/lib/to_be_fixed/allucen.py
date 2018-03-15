@@ -90,7 +90,7 @@ class source:
 
             query = re.sub('(\\\|/| -|:|;|\*|\?|"|\'|<|>|\|)', ' ', query)
 
-            query += ' lang:en'
+            query += ' lang:%s' % self.language[0]
             query = urllib.quote_plus(query)
             url = urlparse.urljoin(self.base_link, self.search_link)
 

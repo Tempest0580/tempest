@@ -38,11 +38,6 @@ queueMenu = control.lang(32065).encode('utf-8')
 
 
 class navigator:
-    ADDON_ID      = xbmcaddon.Addon().getAddonInfo('id')
-    HOMEPATH      = xbmc.translatePath('special://home/')
-    ADDONSPATH    = os.path.join(HOMEPATH, 'addons')
-    THISADDONPATH = os.path.join(ADDONSPATH, ADDON_ID)
-
     def root(self):
         self.addDirectoryItem(32001, 'movieNavigator', 'movies.png', 'DefaultMovies.png')
         self.addDirectoryItem(32002, 'tvNavigator', 'tvshows.png', 'DefaultTVShows.png')
