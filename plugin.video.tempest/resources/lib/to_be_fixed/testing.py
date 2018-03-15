@@ -1,6 +1,6 @@
 import requests
 import sys
-import bs4 as bs
+from bs4 import BeautifulSoup as bs
 import cfscrape
 import re
 import time
@@ -35,21 +35,24 @@ def geturl(title):
 headers = {'User_Agent = Mozilla/5.0 (iPhone; CPU iPhone OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12H143 Safari/600.1.4'}
 search = 'arrow season 6 episode 13'
 
-base_link = 'http://123hulu.unblockall.org/'
-search_link = 'search-movies/%s.html' % search
-title = 'spider-man'
+base_link = 'http://crazy4tv.com'
+search_link = '/search/the flash s04e15'
+sources= []
 
-
-clean_title = geturl(title).replace(' ','-')
-url = base_link + search_link
+url = base_link + search_link.replace(' ', '+')
 scraper = cfscrape.create_scraper()
-r = scraper.get(url)
-r = s(r.text, 'html.parser').find_all('div', class_="ml-item")
-for i in r:
-    link = i.find_all('a')
-    for url in link:
-            print url['href']
+r = scraper.get(url).text
+r = bs(r, 'html.parser')
+link = r.find_all('p', style="text-align: center;")
 
-#url = requests.get(url)
+for i in link:
+    s = i.find_all('strong')
+    for url in s:
+        p = url.find_all('a', href=True)
+        for url in p:
+            host = url.text
+            url = url['href']
 
-#print url
+            sources.append(
+                {'source': host, 'quality': 'SD', 'language': 'en', 'url': url, 'direct': False, 'debridonly': True})
+        print  sources
