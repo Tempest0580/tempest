@@ -40,6 +40,7 @@
         <setting label="English" type="lsep" />
         <setting type="sep" />
         <setting id="provider.1movies" type="bool" label="1MOVIES" default="true" />
+        <setting id="provider.2dll" type="bool" label="2DLL" default="true" />
         <setting id="provider.123hulu" type="bool" label="123HULU" default="true" />
         <setting id="provider.123movies" type="bool" label="123MOVIES" default="true" />
         <setting id="provider.123moviesc" type="bool" label="123MOVIESC" default="true" />
@@ -62,14 +63,12 @@
         <setting id="provider.dizigold" type="bool" label="DIZIGOLD" default="true" />
         <setting id="provider.dwatchseries" type="bool" label="DWATCHSERIES" default="true" />
         <setting id="provider.e123movies" type="bool" label="E123MOVIES" default="true" />
-        <setting id="provider.filpursuit" type="bool" label="FILEPURSUIT" default="true" />
         <setting id="provider.filmxy" type="bool" label="FILMXY" default="true" />
         <setting id="provider.fmovies" type="bool" label="FMOVIES" default="true" />
         <setting id="provider.genvideos" type="bool" label="GENVIDEOS" default="true" />
         <setting id="provider.gogoanime" type="bool" label="GOGOANIME" default="true" />
         <setting id="provider.gowatch" type="bool" label="GOWATCH" default="true" />
         <setting id="provider.hdmega" type="bool" label="HDMEGA" default="true" />
-        <setting id="provider.iiddl" type="bool" label="IIDDL" default="true" />
         <setting id="provider.imdark" type="bool" label="IMDARK" default="true" />
         <setting id="provider.library" type="bool" label="LIBRARY" default="true" />
         <setting id="provider.miradetodo" type="bool" label="MIRADETODO" default="true" />
