@@ -13,7 +13,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="5.0.16" provider-name="tvaddons">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.11" provider-name="jsergio">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" optional="true" />
@@ -30,8 +30,6 @@
 		<summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
 		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
 		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
-		<forum>https://www.tvaddons.co/forums</forum>
-        <website>https://www.tvaddons.co</website>
 	</extension>
 </addon>
 
@@ -47,15 +45,16 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.tempest" version="3.0.21" name="Tempest" provider-name="Tempest">
+<addon id="plugin.video.tempest" version="3.0.23" name="Tempest" provider-name="Tempest">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.tempest.artwork" version="1.0.0" />
 		<import addon="script.tempest.metadata" version="1.0.0" />
-		<import addon="script.module.urlresolver" version="5.0.0" />
+		<import addon="script.module.resolveurl" version="5.0.0" />
 		<import addon="script.module.requests" />
 		<import addon="script.module.metahandler" version="1.0.0" />
 		<import addon="script.module.beautifulsoup4" />
+		<import addon="plugin.video.youtube"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="tempest.py">
 		<provides>video</provides>
