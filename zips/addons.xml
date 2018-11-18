@@ -59,7 +59,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.tempest" version="3.5.3" name="Tempest" provider-name="Tempest">
+<addon id="plugin.video.tempest" version="3.5.5" name="Tempest" provider-name="Tempest">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.tempest.artwork" version="1.0.0" />
