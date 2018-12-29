@@ -1,0 +1,21 @@
+[B]3.8.9[/B]
+- Update goldmovies scraper
+- Added azmovie scraper
+- Added 123movies4u scraper
+- Added 123movieshd scraper back
+- Added moviefullhd scraper
+
+[B]3.8.8[/B]
+- Update Code
+- Added yifymovies scraper
+- Added 123movieshub scraper
+- Added cmovieshd scraper
+- Added movierips scraper
+
+[B]3.8.6[/B]
+- Update Code
+
+[B]3.8.6[/B]
+- Added Changelog
+- Added Real Debrid Only Setting
+- Update Code
