@@ -1,3 +1,7 @@
+[B]3.9.0[/B]
+- Updated scrapers
+- Removed Dead scrapers
+
 [B]3.8.9[/B]
 - Update goldmovies scraper
 - Added azmovie scraper
