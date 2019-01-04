@@ -1,3 +1,6 @@
+[B]3.9.1[/B]
+- Removed Dead or broken scrapers
+
 [B]3.9.0[/B]
 - Updated scrapers
 - Removed Dead scrapers
