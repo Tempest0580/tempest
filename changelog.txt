@@ -1,5 +1,10 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+[B]3.9.3[/B]
+- Updates to Dl7lavin scraper
+- Updates to Dlgalaxy scraper
+- Added Dl4download scrape
+
 [B]3.9.2[/B]
 - Added Alluc scraper
 - Added Cmovieshd scraper
