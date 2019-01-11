@@ -1,5 +1,8 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+[B]3.9.4[/B]
+- Added Ns5 scraper
+
 [B]3.9.3[/B]
 - Updates to Dl7lavin scraper
 - Updates to Dlgalaxy scraper
