@@ -1,7 +1,16 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
-[B]3.9.7[/B]
-- Added S1dl scraper
+[B]3.9.9[/B]
+- Added DDlvalley scraper
+- Added Scnsrc scraper
+
+[B]3.9.8[/B]
+- Added Vdonip scraper
+- Added dl7f2m scraper
+- Added dl6f2m scraper
+- Added dl3f2m scraper
+- Added dlfarshow scraper
+- Removed Goldmovies scraper
 
 [B]3.9.6[/B]
 - Minor Code update
