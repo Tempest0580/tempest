@@ -1,5 +1,8 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+[B]4.0.0[/B]
+- Update to DDlvalley scraper
+
 [B]3.9.9[/B]
 - Added DDlvalley scraper
 - Added Scnsrc scraper
