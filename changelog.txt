@@ -1,5 +1,8 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+[B]4.0.3[/B]
+- Removed more broken scrapers
+
 [B]4.0.2[/B]
 - Updated a few more scrapers
 - Removed a few broken scrapers
