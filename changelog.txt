@@ -1,5 +1,9 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+[B]4.0.7[/B]
+- Fixed Azmovies scraper
+- Updated a Few scrapers
+
 [B]4.0.6[/B]
 - Code Update on a few scrapers
 - Added dl8heyserver scraper
