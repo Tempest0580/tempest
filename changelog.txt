@@ -1,7 +1,11 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+[B]4.0.10[/B]
+- Removed Dead scrapers
+- Fixed a few scrapers
+
 [B]4.0.9[/B]
-- Rewrote Tvdownloads
+- Rewrote Tvdownload
 
 [B]4.0.8[/B]
 - Added dl2f2m scraper
