@@ -1,5 +1,8 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+[B]4.0.11[/B]
+- Minor Update
+
 [B]4.0.10[/B]
 - Removed Dead scrapers
 - Fixed a few scrapers
