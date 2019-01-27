@@ -1,5 +1,9 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+[B]4.0.12[/B]
+- Added Dl5lavinmovie scraper
+- Added Dl2lavinshow scraper
+
 [B]4.0.11[/B]
 - Minor Update
 
