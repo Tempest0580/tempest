@@ -1,5 +1,11 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+[B]4.0.16[/B]
+- Update Urlresolver
+
+[B]4.0.15[/B]
+- Fixed Typo casues issue, Sorry
+
 [B]4.0.14[/B]
 - Updates
 - Added Dlfilm
