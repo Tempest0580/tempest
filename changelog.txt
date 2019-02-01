@@ -1,5 +1,16 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+[B]4.0.17[/B]
+- Added Stgpz10139 scraper
+- Added D1dldrm scraper
+- Added D1dldrmshow scraper
+- Added Dldlb3d scraper
+- Added Dl2dlb3d scraper
+- Added Dl3dlb3d scraper
+- Added Dl4dlb3d scraper
+- Added Dl5dlb3d scraper
+- Added Dl12dlb3dshow scraper
+
 [B]4.0.16[/B]
 - Update Urlresolver
 
