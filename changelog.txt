@@ -1,5 +1,9 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+[B]4.0.21[/B]
+- Minor Update
+- Fixed Resume Playback (Testing)
+
 [B]4.0.20[/B]
 - Updates
 - Added Dl6dlb3d scraper
