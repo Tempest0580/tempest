@@ -1,5 +1,19 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+[B]4.0.20[/B]
+- Updates
+- Added Dl6dlb3d scraper
+- Added Dl8dlb3d scraper
+- Added Dldlb3dshow scraper
+- Added Dl2dlb3dshow scraper
+
+[B]4.0.19[/B]
+- Fixed kodi 18 search issue
+- Other minor updates
+
+[B]4.0.18[/B]
+- Update
+
 [B]4.0.17[/B]
 - Added Stgpz10139 scraper
 - Added D1dldrm scraper
