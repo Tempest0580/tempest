@@ -1,0 +1,141 @@
+Report any issues at https://github.com/Tempest0580/tempest/issues
+
+[B]4.0.22[/B]
+- Added Vdonipshow scraper
+- Fixed Streamdreams scraper
+- Fixed Ddlvalley scraper
+- Fixed Directdl scraper
+
+[B]4.0.21[/B]
+- Minor Update
+- Fixed Resume Playback (Testing)
+
+[B]4.0.20[/B]
+- Updates
+- Added Dl6dlb3d scraper
+- Added Dl8dlb3d scraper
+- Added Dldlb3dshow scraper
+- Added Dl2dlb3dshow scraper
+
+[B]4.0.19[/B]
+- Fixed kodi 18 search issue
+- Other minor updates
+
+[B]4.0.18[/B]
+- Update
+
+[B]4.0.17[/B]
+- Added Stgpz10139 scraper
+- Added D1dldrm scraper
+- Added D1dldrmshow scraper
+- Added Dldlb3d scraper
+- Added Dl2dlb3d scraper
+- Added Dl3dlb3d scraper
+- Added Dl4dlb3d scraper
+- Added Dl5dlb3d scraper
+- Added Dl12dlb3dshow scraper
+
+[B]4.0.16[/B]
+- Update Urlresolver
+
+[B]4.0.15[/B]
+- Fixed Typo casues issue, Sorry
+
+[B]4.0.14[/B]
+- Updates
+- Added Dlfilm
+
+[B]4.0.13[/B]
+- Added Dl8heyservermov scraper
+- Added Dl8heyserver scraper
+- Added S16bitdl scraper
+
+[B]4.0.12[/B]
+- Added Dl5lavinmovie scraper
+- Added Dl2lavinshow scraper
+
+[B]4.0.11[/B]
+- Minor Update
+
+[B]4.0.10[/B]
+- Removed Dead scrapers
+- Fixed a few scrapers
+
+[B]4.0.9[/B]
+- Rewrote Tvdownload
+
+[B]4.0.8[/B]
+- Added dl2f2m scraper
+- Added dl5f2m scraper
+
+[B]4.0.7[/B]
+- Fixed Azmovies scraper
+- Updated a Few scrapers
+
+[B]4.0.6[/B]
+- Code Update on a few scrapers
+- Added dl8heyserver scraper
+- Added dlmeliupload scraper
+
+[B]4.0.5[/B]
+- Added a few more scrapers back(Testing)
+
+[B]4.0.4[/B]
+- Fixed Cfscrape-(Testing)
+- Rewrote a few scrapers-(Pulls more sources)
+- Fixed a few scraper
+- Added back a few scrapers
+
+[B]4.0.3[/B]
+- Removed more broken scrapers
+
+[B]4.0.2[/B]
+- Updated a few more scrapers
+- Removed a few broken scrapers
+
+[B]4.0.1[/B]
+- Updated a few scrapers
+- Removed a few broken scrapers
+
+[B]4.0.0[/B]
+- Update to DDlvalley scraper
+
+[B]3.9.9[/B]
+- Added DDlvalley scraper
+- Added Scnsrc scraper
+
+[B]3.9.8[/B]
+- Added Vdonip scraper
+- Added dl7f2m scraper
+- Added dl6f2m scraper
+- Added dl3f2m scraper
+- Added dlfarshow scraper
+- Removed Goldmovies scraper
+
+[B]3.9.7[/B]
+- Added S1dl scraper
+
+[B]3.9.6[/B]
+- Minor Code update
+
+[B]3.9.5[/B]
+- Added Dl2lavin scraper
+- Added Dllavin scrapper
+- Added Dl4lavin scraper
+
+[B]3.9.4[/B]
+- Added Ns5 scraper
+
+[B]3.9.3[/B]
+- Updates to Dl7lavin scraper
+- Updates to Dlgalaxy scraper
+- Added Dl4download scraper
+
+[B]3.9.2[/B]
+- Added Alluc scraper
+- Added Cmovieshd scraper
+- Added Dl7lavin scraper
+- Added Dlgalaxy scraper
+
+[B]3.9.1[/B]
+- Removed Dead or broken scrapers

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="32310">
+        <setting id="appearance.alt" type="action" label="32311" default="-" option="close" action="RunPlugin(plugin://plugin.video.tempest/?action=artwork)" visible="!System.HasAddon(script.tempest.artwork)" />
+        <setting id="appearance.1" type="select" label="32311" values="Exuary|Tempest" default="Tempest" visible="System.HasAddon(script.tempest.artwork)" />
+        <setting id="scrapers.timeout.1" type="slider" label="32312" default="60" range="10,60" option="int" />
+        <setting id="trakt.user" type="text" default="" visible="false" />
+        <setting id="indicators.alt" type="enum" label="32313" lvalues="32314|32315" default="1" visible="!eq(-1,)" />
+        <setting id="indicators" type="enum" label="32313" lvalues="32314" default="0" visible="eq(-2,)" />
+        <setting id="api.language" visible="false" type="select" label="32316" values="English" default="English" />
+        <setting id="providers.lang" visible="false" type="select" label="32360" values="English" default="English" />
+        <setting id="fanart" type="bool" label="32318" default="true" />
+        <setting id="showunaired" type="bool" label="32570" default="true" />
+        <setting id="unaired.identify" type="enum" label="32608" lvalues="32589|32590|32591|32592|32593|32594|32595|32596|32597|32598" default="1" />
+        <setting type="lsep" label="32319" />
+        <setting type="sep" />
+        <setting id="movie.widget" type="enum" label="32320" lvalues="32302|32321|32322|32323|32324|32580" default="1" />
+        <setting id="tv.widget.alt" type="enum" label="32325" lvalues="32302|32326|32327|32328" default="2" visible="!eq(-11,)" />  
+        <setting id="tv.widget" type="enum" label="32325" lvalues="32302|32326" default="1" visible="eq(-12,)" />
+        <setting id="lists.widget" type="enum" label="32329" lvalues="32302|32301" default="1" />
+    </category>
+    <category label="32330">
+        <setting id="hosts.mode" type="enum" label="32331" lvalues="32332|32333|32334" default="1" />
+        <setting id="progress.dialog" type="enum" label="32335" lvalues="32336|32337" default="0" />
+        <setting id="prem.identify" type="enum" label="32588" lvalues="32589|32590|32591|32592|32593|32594|32595|32596|32597|32598" default="0" />
+        <setting type="lsep" label="32338" />
+        <setting type="sep" />
+        <setting id="hosts.quality" type="enum" label="32339" values="4K|1440p|1080p|720p|480p" default="0" />
+        <setting id="debrid.only" type="bool" label="Debrid Sources Only" default="false" />
+        <setting id="autoplay.sd" type="bool" label="32340" default="false" />
+        <setting id="sources.extrainfo" type="bool" label="32587" default="true" />
+        <setting id="hosts.captcha" type="bool" label="32341" default="true" />
+        <setting id="hosts.sort.provider" type="bool" label="32342" default="false" />
+        <setting type="sep" />
+        <setting type="lsep" label="32343" />
+        <setting id="bookmarks" type="bool" label="32344" default="true" />
+    </category>
+    <category label="32345">
+        <setting label="Providers" type="lsep" />
+        <setting type="sep" />
+        <setting id="provider.123movies4u" type="bool" label="123MOVIES4U" default="true" />
+        <setting id="provider.123moviesfree" type="bool" label="123MOVIESFREE" default="true" />
+        <setting id="provider.123movieshubz" type="bool" label="123MOVIESHUBZ" default="true" />
+        <setting id="provider.123123movies" type="bool" label="123123MOVIES" default="true" />
+        <setting id="provider.allucxyz" type="bool" label="ALLUCXYZ" default="true" />
+        <setting id="provider.azmovie" type="bool" label="AZMOVIE" default="true" />
+        <setting id="provider.bnwmovies" type="bool" label="BNWMOVIES" default="true" />
+        <setting id="provider.cartoonhd" type="bool" label="CARTOONHD" default="true" />
+        <setting id="provider.cartoonwire" type="bool" label="CARTOONWIRE" default="true" />
+        <setting id="provider.cmovieshd" type="bool" label="CMOVIESHD" default="true" />
+        <setting id="provider.cmovieshdbz" type="bool" label="CMOVIESHDBZ" default="true" />
+        <setting id="provider.fmovies" type="bool" label="FMOVIES" default="true" />
+        <setting id="provider.freefmovies" type="bool" label="FREEFMOVIES" default="true" />
+        <setting id="provider.furk" type="bool" label="FURK" default="true" />
+        <setting id="provider.gostream" type="bool" label="GOSTREAM" default="true" />
+        <setting id="provider.gowatchseries" type="bool" label="GOWATCHSERIES" default="true" />
+        <setting id="provider.hackimdb" type="bool" label="HACKIMDB" default="true" />
+        <setting id="provider.kattv" type="bool" label="KATTV" default="false" />
+        <setting id="provider.library" type="bool" label="LIBRARY" default="true" />
+        <setting id="provider.movie4kis" type="bool" label="MOVIE4KIS" default="true" />
+        <setting id="provider.movie4kto" type="bool" label="MOVIE4KTO" default="true" />
+        <setting id="provider.moviego" type="bool" label="MOVIEGO" default="true" />
+        <setting id="provider.mycouchtuner" type="bool" label="MYCOUCHTUNER" default="true" />
+        <setting id="provider.odb" type="bool" label="ODB" default="true" />
+        <setting id="provider.openloadlinks" type="bool" label="OPENLOADLINKS" default="true" />
+        <setting id="provider.openloadmovie" type="bool" label="OPENLOADMOVIE" default="true" />
+        <setting id="provider.playmovies" type="bool" label="PLAYMOVIES" default="true" />
+        <setting id="provider.projectfreetv" type="bool" label="PROJECTFREETV" default="true" />
+        <setting id="provider.putlockersgs" type="bool" label="PUTLOCKERSGS" default="true" />
+        <setting id="provider.reddit" type="bool" label="REDDIT" default="true" />
+        <setting id="provider.seehd" type="bool" label="SEEHD" default="true" />
+        <setting id="provider.series9" type="bool" label="SERIES9" default="true" />
+        <setting id="provider.seriesfree" type="bool" label="SERIESFREE" default="true" />
+        <setting id="provider.seriesonline" type="bool" label="SERIESONLINE" default="true" />
+        <setting id="provider.solarmoviez" type="bool" label="SOLARMOVIEZ" default="true" />
+        <setting id="provider.spacemov" type="bool" label="SPACEMOV" default="true" />
+        <setting id="provider.streamdreams" type="bool" label="STREAMDREAMS" default="true" />
+        <setting id="provider.swatchseries" type="bool" label="SWATCHSERIES" default="true" />
+        <setting id="provider.videoscraper" type="bool" label="VIDEOSCRAPER" default="true" />
+        <setting id="provider.watchepisodes4" type="bool" label="WATCHEPISODES4" default="true" />
+        <setting id="provider.watchfree" type="bool" label="WATCHFREE" default="true" />
+        <setting id="provider.watchfree1" type="bool" label="WATCHFREE1" default="true" />
+        <setting id="provider.watchseries" type="bool" label="WATCHSERIES" default="true" />
+        <setting id="provider.watchserieshd" type="bool" label="WATCHSERIESHD" default="true" />
+    </category>
+    <category label="Debrid Only">
+        <setting label="Debrid Providers" type="lsep" />
+        <setting type="sep" />
+        <setting id="provider.300mbdownload" type="bool" label="300MBDOWNLOAD" default="true" />
+        <setting id="provider.300mbfilms" type="bool" label="300MBFILMS" default="true" />
+        <setting id="provider.bestmoviez" type="bool" label="BESTMOVIEZ" default="true" />
+        <setting id="provider.ddlvalley" type="bool" label="DDLVALLEY" default="true" />
+        <setting id="provider.directdl" type="bool" label="DIRECTDL" default="true" />
+        <setting id="provider.invictus" type="bool" label="INVICTUS" default="true" />
+        <setting id="provider.iwantmyshow" type="bool" label="IWANTMYSHOW" default="true" />
+        <setting id="provider.rlsb" type="bool" label="RLSB" default="true" />
+        <setting id="provider.rlsbb" type="bool" label="RLSBB" default="true" />
+        <setting id="provider.scenerls" type="bool" label="SCENERLS" default="true" />
+        <setting id="provider.scnsrc" type="bool" label="SCNSRC" default="true" />
+        <setting id="provider.tvdownload" type="bool" label="TVDOWNLOAD" default="true" />
+        <setting id="provider.ultrahd" type="bool" label="ULTRAHD" default="true" />
+        <setting id="provider.wrzcraft" type="bool" label="WRZCRAFT" default="true" />
+    </category>
+    <category label="Direct Only">
+        <setting label="Direct Providers" type="lsep" />
+        <setting type="sep" />
+        <setting id="provider.d1dldrm" type="bool" label="D1DLDRM" default="true" />
+        <setting id="provider.d1dldrmshow" type="bool" label="D1DLDRMSHOW" default="true" />
+        <setting id="provider.divxcrawler" type="bool" label="DIVXCRAWLER" default="true" />
+        <setting id="provider.dl2dlb3d" type="bool" label="DL2DLB3D" default="true" />
+        <setting id="provider.dl2dlb3dshow" type="bool" label="DL2DLB3DSHOW" default="true" />
+        <setting id="provider.dl2f2m" type="bool" label="DL2F2M" default="true" />
+        <setting id="provider.dl2lavin" type="bool" label="DL2LAVIN" default="true" />
+        <setting id="provider.dl2lavinshow" type="bool" label="DL2LAVINSHOW" default="true" />
+        <setting id="provider.dl3dlb3d" type="bool" label="DL3DLB3D" default="true" />
+        <setting id="provider.dl3f2m" type="bool" label="DL3F2M" default="true" />
+        <setting id="provider.dl4dlb3d" type="bool" label="DL4DLB3D" default="true" />
+        <setting id="provider.dl4download" type="bool" label="DL4DOWNLOAD" default="true" />
+        <setting id="provider.dl4downloadshows" type="bool" label="DL4DOWNLOADSHOWS" default="true" />
+        <setting id="provider.dl4lavin" type="bool" label="DL4LAVIN" default="true" />
+        <setting id="provider.dl5dlb3d" type="bool" label="DL5DLB3D" default="true" />
+        <setting id="provider.dl5f2m" type="bool" label="DL5F2M" default="true" />
+        <setting id="provider.dl5lavinmovie" type="bool" label="DL5LAVINMOVIE" default="true" />
+        <setting id="provider.dl6dlb3d" type="bool" label="DL6DLB3D" default="true" />
+        <setting id="provider.dl6f2m" type="bool" label="DL6F2M" default="true" />
+        <setting id="provider.dl7f2m" type="bool" label="DL7F2M" default="true" />
+        <setting id="provider.dl7lavin" type="bool" label="DL7LAVIN" default="true" />
+        <setting id="provider.dl8dlb3d" type="bool" label="DL8DLB3D" default="true" />
+        <setting id="provider.dl8heyserver" type="bool" label="DL8HEYSERVER" default="true" />
+        <setting id="provider.dl8heyservermov" type="bool" label="DL8HEYSERVERMOV" default="true" />
+        <setting id="provider.dl12dlb3dshow" type="bool" label="DL12DLB3DSHOW" default="true" />
+        <setting id="provider.dldlb3d" type="bool" label="DLDLB3D" default="true" />
+        <setting id="provider.dldlb3dshow" type="bool" label="DLDLB3DSHOW" default="true" />
+        <setting id="provider.dlfarshow" type="bool" label="DLFARSHOW" default="true" />
+        <setting id="provider.dlfilm" type="bool" label="DLFILM" default="true" />
+        <setting id="provider.dlmeliupload" type="bool" label="DLMELIUPLOAD" default="true" />
+        <setting id="provider.hdpopcorns" type="bool" label="HDPOPCORNS" default="true" />
+        <setting id="provider.iwaatch" type="bool" label="IWAATCH" default="true" />
+        <setting id="provider.lalbatte" type="bool" label="LALBATTE" default="true" />
+        <setting id="provider.ns5" type="bool" label="NS5" default="true" />
+        <setting id="provider.ororo" type="bool" label="ORORO" default="true" />
+        <setting id="provider.s1dl" type="bool" label="S1DL" default="true" />
+        <setting id="provider.s16bitdl" type="bool" label="S16BITDL" default="true" />
+        <setting id="provider.stgpz10139" type="bool" label="STGPZ10139" default="true" />
+        <setting id="provider.vdonip" type="bool" label="VDONIP" default="true" />
+        <setting id="provider.vdonipshow" type="bool" label="VDONIPSHOW" default="true" />
+    </category>
+    <category label="32346">
+        <setting type="lsep" label="FANART.TV - Personal API keys provide quicker API responses." />
+        <setting type="lsep" label="32583" default="" />
+        <setting id="fanart.tv.user" type="text" label="32309" default="" />
+        <setting type="sep" />
+        <setting type="lsep" label="TMDb" />
+        <setting id="tm.user" type="text" option="hidden" label="32309" default="NTRkMzRlYjcwZmUyYzk5MWI5OTcxNTAzN2M1NTIzYjk=" />
+        <setting type="sep" />
+        <setting type="lsep" label="Trakt" />
+        <setting id="trakt.auth" type="action" label="32306" option="close" action="RunPlugin(plugin://plugin.video.tempest/?action=authTrakt)" />
+        <setting id="trakt.token" type="text" visible="false" label="" default="" />
+        <setting id="trakt.refresh" type="text" visible="false" label="" default="" />
+        <setting type="sep" />
+        <setting type="lsep" label="32538" />
+        <setting type="lsep" label="32539" />
+        <setting id="open_smu_settings" type="action" label="32540" enable="true" option="close" action="RunPlugin(plugin://plugin.video.tempest/?action=smuSettings)" />
+        <setting type="sep" />
+        <setting type="lsep" label="IMDb" />
+        <setting id="imdb.user" type="text" label="32303" default="" />
+        <setting type="sep" />
+        <setting type="lsep" label="Furk.net" />
+        <setting id="furk.user_name" type="text" label="Furk Username" default="" />
+        <setting id="furk.user_pass" type="text" label="Furk Password" option="hidden" default="" />
+        <setting id="furk.api" type="text" label="Furk API Key" default="" />
+        <setting id="furk.mod.level" type="labelenum" label="Set Furk Moderation Level" default="Yes" values="No|Yes|Full" />
+        <setting id="furk.limit" label="Limit results" type="slider" default="25" range="5,5,200" option="int" />
+        <setting type="sep" />
+        <setting type="lsep" label="Ororo.tv" />
+        <setting id="ororo.user" type="text" label="32304" default="" />
+        <setting id="ororo.pass" type="text" option="hidden" label="32307" default="" />
+    </category>
+    <category label="32347">
+        <setting id="downloads" type="bool" label="32348" default="false" />
+        <setting type="sep" />
+        <setting id="movie.download.path" type="folder" label="32349" enable="!eq(-2,false)" default="" />
+        <setting id="tv.download.path" type="folder" label="32350" enable="!eq(-3,false)" default="" />
+        <setting type="sep" />
+        <setting type="lsep" label="32351" />
+        <setting type="lsep" label="32352" />
+    </category>
+    <category label="Subtitles">
+        <setting id="subtitles" type="bool" label="32354" default="false" />
+        <setting type="sep" />
+        <setting id="subtitles.utf" type="bool" label="32355" enable="!eq(-2,false)" default="false" />
+        <setting type="sep" />
+        <setting id="subtitles.lang.1" visible="false" type="select" label="32356" values="English" enable="!eq(-4,false)" default="English" />
+        <setting type="lsep" label="32358" />
+        <setting type="lsep" label="32359" />
+    </category>
+</settings>
