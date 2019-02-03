@@ -1,5 +1,8 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+[B]4.0.24[/B]
+- Temp Rollback
+
 [B]4.0.22[/B]
 - Few Updates (More Testing)
 
