@@ -1,5 +1,9 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+[B]4.0.27[/B]
+- Added Downflix (1080p and watchhdmovie new site)
+- Added Hdpopcorns.eu (Thanks to Jewbmx)
+
 [B]4.0.26[/B]
 - Misc Updates
 - Rolled back Urlresover
