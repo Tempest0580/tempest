@@ -1,5 +1,8 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+[B]4.0.29[/B]
+- Misc Updates
+
 [B]4.0.28[/B]
 - Updated Urlresolver
 - Fixed broken shortcuts to settings tabs
