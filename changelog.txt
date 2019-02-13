@@ -1,5 +1,9 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+[B]4.0.31[/B]
+- Added Gomoivesfilm
+- Added Gomoviessc (Will add tvshows later)
+
 [B]4.0.30[/B]
 - Added ddllvalley (Backup for Ddlvalley until i can rewrite it)
 - Added Gomoviesink (Created by Tempest)
