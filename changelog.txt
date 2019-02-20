@@ -1,5 +1,9 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+[B]4.0.33[/B]
+- Added Toreent Support
+- Misc Updates
+
 [B]4.0.32[/B]
 - Fixed Downflix
 - Misc Updates
