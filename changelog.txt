@@ -1,5 +1,8 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+[B]4.0.36[/B]
+- Removed Torrent support Temp (Bug in source result, will add it back once i figure it out. Sorry)
+
 [B]4.0.34[/B]
 - Misc Update (forgot something lol)
 
