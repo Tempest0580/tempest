@@ -1,13 +1,20 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+[B]4.0.37[/B]
+- Cosmetic updates
+- Few Scraper updates
+
 [B]4.0.36[/B]
 - Removed Torrent support Temp (Bug in source result, will add it back once i figure it out. Sorry)
+
+[B]4.0.36[/B]
+-
 
 [B]4.0.34[/B]
 - Misc Update (forgot something lol)
 
 [B]4.0.33[/B]
-- Added Toreent Support
+- Added Torrent Support
 - Misc Updates
 
 [B]4.0.32[/B]
