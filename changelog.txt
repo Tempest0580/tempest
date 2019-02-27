@@ -1,5 +1,9 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+[B]4.0.39[/B]
+- Added 0dayreleases (debrid scraper)
+- Added Mvrls scraper (debrid scraper)
+
 [B]4.0.38[/B]
 - Fixed Bestmoviez scraper
 - Added Dlsrvdl scraper
