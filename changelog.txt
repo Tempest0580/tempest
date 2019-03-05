@@ -1,5 +1,13 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+[B]4.0.40[/B]
+- Cosmetic updates
+- Added Dlmyfilm (Direct)
+- Added Dlupdlf (Direct)
+- Added Dl2lavinmovie (Direct)
+- Added Dlmyfilminfo (Direct)
+- Cosmetic updates on few scrapers
+
 [B]4.0.39[/B]
 - Added 0dayreleases (debrid scraper)
 - Added Mvrls scraper (debrid scraper)
@@ -57,71 +65,4 @@ Report any issues at https://github.com/Tempest0580/tempest/issues
 
 [B]4.0.25[/B]
 - Try Again, Few Updates (More Testing)
-
-[B]4.0.24[/B]
-- Temp Rollback
-
-[B]4.0.22[/B]
-- Few Updates (More Testing)
-
-[B]4.0.22[/B]
-- Added Vdonipshow scraper
-- Fixed Streamdreams scraper
-- Fixed Ddlvalley scraper
-- Fixed Directdl scraper
-
-[B]4.0.21[/B]
-- Minor Update
-- Fixed Resume Playback (Testing)
-
-[B]4.0.20[/B]
-- Updates
-- Added Dl6dlb3d scraper
-- Added Dl8dlb3d scraper
-- Added Dldlb3dshow scraper
-- Added Dl2dlb3dshow scraper
-
-[B]4.0.19[/B]
-- Fixed kodi 18 search issue
-- Other minor updates
-
-[B]4.0.18[/B]
-- Update
-
-[B]4.0.17[/B]
-- Added Stgpz10139 scraper
-- Added D1dldrm scraper
-- Added D1dldrmshow scraper
-- Added Dldlb3d scraper
-- Added Dl2dlb3d scraper
-- Added Dl3dlb3d scraper
-- Added Dl4dlb3d scraper
-- Added Dl5dlb3d scraper
-- Added Dl12dlb3dshow scraper
-
-[B]4.0.16[/B]
-- Update Urlresolver
-
-[B]4.0.15[/B]
-- Fixed Typo casues issue, Sorry
-
-[B]4.0.14[/B]
-- Updates
-- Added Dlfilm
-
-[B]4.0.13[/B]
-- Added Dl8heyservermov scraper
-- Added Dl8heyserver scraper
-- Added S16bitdl scraper
-
-[B]4.0.12[/B]
-- Added Dl5lavinmovie scraper
-- Added Dl2lavinshow scraper
-
-[B]4.0.11[/B]
-- Minor Update
-
-[B]4.0.10[/B]
-- Removed Dead scrapers
-- Fixed a few scrapers
 
