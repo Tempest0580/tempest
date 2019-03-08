@@ -1,5 +1,11 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+[B][COLOR gold] 4.0.41 [/COLOR][/B]
+- Removed Downflix scraper
+- Added Cartoonwire scraper back
+- Added Dlupload8 scraper's (Direct)
+- Few scraper updates
+
 [B]4.0.40[/B]
 - Cosmetic updates
 - Added Dlmyfilm (Direct)
