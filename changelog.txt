@@ -1,12 +1,15 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
-[B][COLOR gold] 4.0.41 [/COLOR][/B]
+4.0.42
+- Missed something in one of the scrapers
+
+4.0.41
 - Removed Downflix scraper
 - Added Cartoonwire scraper back
 - Added Dlupload8 scraper's (Direct)
 - Few scraper updates
 
-[B]4.0.40[/B]
+4.0.40
 - Cosmetic updates
 - Added Dlmyfilm (Direct)
 - Added Dlupdlf (Direct)
@@ -14,61 +17,61 @@ Report any issues at https://github.com/Tempest0580/tempest/issues
 - Added Dlmyfilminfo (Direct)
 - Cosmetic updates on few scrapers
 
-[B]4.0.39[/B]
+4.0.39
 - Added 0dayreleases (debrid scraper)
 - Added Mvrls scraper (debrid scraper)
 
-[B]4.0.38[/B]
+4.0.38
 - Fixed Bestmoviez scraper
 - Added Dlsrvdl scraper
 
-[B]4.0.37[/B]
+4.0.37
 - Cosmetic updates
 - Few Scraper updates
 
-[B]4.0.36[/B]
+4.0.36
 - Removed Torrent support Temp (Bug in source result, will add it back once i figure it out. Sorry)
 
-[B]4.0.36[/B]
+4.0.36
 -
 
-[B]4.0.34[/B]
+4.0.34
 - Misc Update (forgot something lol)
 
-[B]4.0.33[/B]
+4.0.33
 - Added Torrent Support
 - Misc Updates
 
-[B]4.0.32[/B]
+4.0.32
 - Fixed Downflix
 - Misc Updates
 
-[B]4.0.31[/B]
+4.0.31
 - Added Gomoivesfilm
 - Added Gomoviessc (Will add tvshows later)
 
-[B]4.0.30[/B]
+4.0.30
 - Added ddllvalley (Backup for Ddlvalley until i can rewrite it)
 - Added Gomoviesink (Created by Tempest)
 - Added Moviescouch (Thanks to Jewbmx, was on my list as well lol)
 - Fixed Ymovies
 
-[B]4.0.29[/B]
+4.0.29
 - Misc Updates
 
-[B]4.0.28[/B]
+4.0.28
 - Updated Urlresolver
 - Fixed broken shortcuts to settings tabs
 - Added Ddlspot (debrid)
 
-[B]4.0.27[/B]
+4.0.27
 - Added Downflix (1080p and watchhdmovie new site)
 - Added Hdpopcorns.eu (Thanks to Jewbmx)
 
-[B]4.0.26[/B]
+4.0.26
 - Misc Updates
 - Rolled back Urlresolver
 
-[B]4.0.25[/B]
+4.0.25
 - Try Again, Few Updates (More Testing)
 
