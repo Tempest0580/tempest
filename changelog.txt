@@ -1,5 +1,12 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+4.0.44
+- More scraper cleanup
+- Fixed iwantmyshow scraper and renamed to myvideolinks
+- Fixed mycouchtuner scraper
+- Removed dead scrapers
+    (bestmovez, 300mbdownload, streamdreams, putlockersgs, openloadlinks)
+
 4.0.43
 - Direct scrapers cleanup
 
