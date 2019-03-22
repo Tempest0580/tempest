@@ -1,5 +1,10 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+4.0.48
+- Cfscrape update (Credit to the person that updated it)
+- Added Dlsitemovie (Direct scraper)
+- Added Dl20mihanpix (Direct scraper)
+
 4.0.47
 - Added Pz10028 (Direct scraper)
 - Added Pz10093 (Direct scraper)
