@@ -1,5 +1,15 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+4.0.50
+- Added ability to toggle Enable/Disable debrid, direct or normal providers
+- Added Dlf2m (Direct scraper)
+- Direct scrapers update
+
+4.0.49
+- Removed dead or broken scrapers
+- Added S2dlserver (Direct scraper)
+- Cleaned up few scrapers
+
 4.0.48
 - Cfscrape update (Credit to the person that updated it)
 - Added Dlsitemovie (Direct scraper)
