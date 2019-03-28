@@ -1,6 +1,9 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
-4.0.52a
+4.0.53
+- Minor Code update
+
+4.0.52
 Fresh install recommended
 
 4.0.52
