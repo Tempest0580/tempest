@@ -1,5 +1,8 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+4.0.52a
+Fresh install recommended
+
 4.0.52
 - Added Torrent support back -- (Testing)
 - Added 111ys Torrent scraper
