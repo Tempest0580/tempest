@@ -1,5 +1,15 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+4.0.54
+- Added Dl8lavin scraper (Direct)
+- Added Dl9lavin scraper (Direct)
+- Added S1tinydl scraper (Direct)
+- Added Movieminions scraper (Direct)
+- ADDED Mihanpix scraper (Direct)
+- Added Ganool123 scraper (Updated to pull more movies)
+- Added Ganool123rd scraper (Rd user sources)
+- Misc code cleanup
+
 4.0.53
 - Minor Code update
 
