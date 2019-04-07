@@ -1,5 +1,9 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+4.0.58
+- Code cleanup
+- Added Foreign Language and Providers (Work in progress -- Has not really been tested)
+
 4.0.57
 - Updated cfscrape (Thanks to Doko-desuka)
 - Updated some scrapers
