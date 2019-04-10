@@ -1,5 +1,9 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+4.0.60
+- Fixed 0dayreleases scraper
+- Fixed Mkvcage scraper
+
 4.0.59
 - Removed Foreign Providers (Added Premature -- Needs A lot of work)
 - Added Flatten Tv
