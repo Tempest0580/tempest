@@ -1,5 +1,8 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+4.0.61
+- Fixed some scrapers
+
 4.0.60
 - Fixed 0dayreleases scraper
 - Fixed Mkvcage scraper
