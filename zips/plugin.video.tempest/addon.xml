@@ -2,11 +2,11 @@
 <addon id="plugin.video.tempest" version="4.0.63" name="Tempest" provider-name="Tempest">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
-		<import addon="script.tempest.artwork" version="1.0.0" />
-		<import addon="script.tempest.metadata" version="1.0.0" />
-		<import addon="script.module.urlresolver" version="5.0.0" />
+		<import addon="script.tempest.artwork" />
+		<import addon="script.tempest.metadata" />
+		<import addon="script.module.urlresolver" />
 		<import addon="script.module.requests" />
-		<import addon="script.module.metahandler" version="1.0.0" />
+		<import addon="script.module.metahandler" />
 		<import addon="script.module.beautifulsoup4" />
 		<import addon="plugin.video.youtube"/>
 	</requires>
