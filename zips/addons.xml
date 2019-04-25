@@ -22,8 +22,8 @@
 	</extension>
 </addon>
 
-<addon id="repository.tempest" name="Tempest Repo" version="0.0.3" provider-name="Tempest">
-	<extension point="xbmc.addon.repository" name="Tempest Repo">
+<addon id="repository.tempest" name="Tempest" version="0.0.4" provider-name="Tempest">
+	<extension point="xbmc.addon.repository" name="Tempest">
         <info compressed="false">https://raw.githubusercontent.com/Tempest0580/tempest/master/zips/addons.xml</info>
 	    <checksum>https://raw.githubusercontent.com/Tempest0580/tempest/master/zips/addons.xml.md5</checksum>
 	    <datadir zip="true">https://raw.githubusercontent.com/Tempest0580/tempest/master/zips/</datadir>
@@ -47,7 +47,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.tempest" version="4.0.65a" name="Tempest" provider-name="Tempest">
+<addon id="plugin.video.tempest" version="4.0.66" name="Tempest" provider-name="Tempest">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.tempest.artwork" />
