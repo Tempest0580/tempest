@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.tempest" name="Tempest" version="0.0.4" provider-name="Tempest">
-	<extension point="xbmc.addon.repository" name="Tempest">
+<addon id="repository.tempest" name="Tempest Repo" version="0.0.5" provider-name="Tempest">
+	<extension point="xbmc.addon.repository" name="Tempest Repo">
         <info compressed="false">https://raw.githubusercontent.com/Tempest0580/tempest/master/zips/addons.xml</info>
 	    <checksum>https://raw.githubusercontent.com/Tempest0580/tempest/master/zips/addons.xml.md5</checksum>
 	    <datadir zip="true">https://raw.githubusercontent.com/Tempest0580/tempest/master/zips/</datadir>

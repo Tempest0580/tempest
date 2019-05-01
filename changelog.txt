@@ -1,5 +1,14 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+4.0.67
+- Cosmetic Code Update
+- Misc Code Update
+- Updated Some Scrapers
+- Added Rapidmoviez scraper (Debrid scraper, Sent to me by email. Fixed by me.)
+
+4.0.66
+- Misc Update
+
 -Update Urlresolver
 
 4.0.65
