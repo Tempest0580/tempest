@@ -1,5 +1,22 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+4.0.70
+- Added New In Theater (Thanks to Jewbmx - Better than the old one, Renamed old way to Theater old)
+- Added Rlslog scraper (Debrid only)
+- Added Sceneddl scraper (Debrid only)
+- Fixed DDlvalley scraper
+- Fixed Myvideolinks
+- Fixed Ganool scraper (Removed non Debrid version)
+- Added 1Putlocker, Filmxy and Animetoon scrapers ( Thanks to Jewbmx)
+
+4.0.69
+- Fix Trakt Issues
+
+4.0.68
+- Cosmetic Code Update
+- Scraper Updates
+- Cfscrape Update
+
 -Update Urlresolver
 
 4.0.67
