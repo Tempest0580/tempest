@@ -1,5 +1,8 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+4.0.73
+- Seems The issue is still in my code, Reverting back to 4.0.70 code until i can figure out the issue
+
 4.0.72
 - Fixed Scraper Filtering issue
 
