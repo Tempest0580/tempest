@@ -1,5 +1,14 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+4.0.72
+- Fixed Scraper Filtering issue
+
+4.0.71
+[B][COLOR gold] 4.0.71 [/COLOR][/B]
+- Removed Duplicate Sources, Disabled by default (Thanks to doko-desuka)
+- Removed Dead Scrapers
+- More To Come
+
 4.0.70
 - Added New In Theater (Thanks to Jewbmx - Better than the old one, Renamed old way to Theater old)
 - Added Rlslog scraper (Debrid only)
