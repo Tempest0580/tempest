@@ -1,5 +1,12 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+4.0.75
+- Removed Dead Scrapers
+- Fixed Gomoviesink scraper
+- Fixed Moviescouch scraper
+- Fixed 300mbfilms scraper
+- Fixed Watchseries scraper (Bug in old code, Ill fix it later)
+
 4.0.74
 - Removed Dead or broken scrapers
 
