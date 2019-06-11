@@ -1,5 +1,12 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+4.0.76
+- Few Updates, Few scrapers added
+- Added Wsunblock scraper (Thanks to Jewbmx)
+- Added Yesmoviesgg scraper (Thanks to Jewbmx)
+- Fixed Ddlvalley scraper
+- Fixed Mkvcage scraper
+
 4.0.75
 - Removed Dead Scrapers
 - Fixed Gomoviesink scraper
