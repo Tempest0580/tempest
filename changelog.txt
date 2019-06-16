@@ -1,5 +1,9 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+4.0.77
+- Removed Dead Scrapers
+- Minor Code Cleanup
+
 4.0.76
 - Few Updates, Few scrapers added
 - Added Wsunblock scraper (Thanks to Jewbmx)
