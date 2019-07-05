@@ -1,5 +1,9 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+4.0.80
+- Cfscrape update
+- Tweeked a few scrapers
+
 4.0.79
 - Few Updates
 - Added Pre-Emptive Termination (Testing)
