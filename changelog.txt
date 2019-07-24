@@ -1,5 +1,11 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+4.0.81
+- Cfscrape update
+- Removed a few Dead Scrapers
+- Fixed a few Scrapers
+- Added a few Scrapers
+
 4.0.80
 - Cfscrape update
 - Tweeked a few scrapers
