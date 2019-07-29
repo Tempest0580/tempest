@@ -1,5 +1,8 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 
+4.0.84
+- Fixed and added back a couple old Scrapers
+
 4.0.83
 - Added Duplicate Sources Checker, Disabled by default (Thanks to doko-desuka)
 - Fixed a few Scrapers
