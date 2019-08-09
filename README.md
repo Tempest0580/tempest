@@ -1,4 +1,5 @@
 # Tempest
 Kodi addon
 
-http://tempest.zapto.org/repo/
+New Repo
+https://tempest0580.github.io/
