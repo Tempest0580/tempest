@@ -1,6 +1,12 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 New Repo https://tempest0580.github.io/
 
+4.0.93
+- Fix and Added TorrentQuest scraper back
+- Added a few scrapers
+- Removed some dead scrapers
+- Changed from UrlResolver to ResolveUrl as its updated more often
+
 4.0.92
 - Quick update to Btdb scraper
 
