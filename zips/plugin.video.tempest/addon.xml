@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.tempest" version="4.0.94" name="Tempest" provider-name="Tempest">
+<addon id="plugin.video.tempest" version="4.0.95" name="Tempest" provider-name="Tempest">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.tempest.artwork" />
@@ -24,7 +24,7 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-			v1.0.0 - Initial version.
+			v4.0.95 - Remove Dead Scrapers - Updated scrapers.
 		</news>
 	</extension>
 </addon>
