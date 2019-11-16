@@ -1,6 +1,9 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 New Repo https://tempest0580.github.io/
 
+4.0.99
+- Possible Fix Tvdb Artwork Issue (Art work is still not downloading but you can now watch tvshows)
+
 4.0.98
 - UstvGo fix - Fixed a few broken chaneels
 
