@@ -1,6 +1,12 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 New Repo https://tempest0580.github.io/
 
+5.0.1
+- Update for Tvdb art (Improved Artwork but some are still slow or not downloading)
+
+5.0.0
+- Update Tvdb art
+
 4.0.99
 - Possible Fix Tvdb Artwork Issue (Art work is still not downloading but you can now watch tvshows)
 
