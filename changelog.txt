@@ -1,6 +1,9 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 New Repo https://tempest0580.github.io/
 
+5.0.4
+- Testing another fix for Tvdb (I dont think its still 100% yet)
+
 5.0.3
 - Another fix for Tvdb
 
