@@ -2,6 +2,9 @@ Report any issues at https://github.com/Tempest0580/tempest/issues
 New Repo https://tempest0580.github.io/
 
 5.0.16
+-ResolveUrl Update
+
+5.0.16
 - Updated/Added scrapers. Fixed Episode Sorting
 - Removed Dead Scrapers
 - Removed Direct Scraper until i can find some more good reliable ones
