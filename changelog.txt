@@ -1,6 +1,16 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 New Repo https://tempest0580.github.io/
 
+5.0.16
+- Updated/Added scrapers. Fixed Episode Sorting
+- Removed Dead Scrapers
+- Removed Direct Scraper until i can find some more good reliable ones
+- Code Clean up
+- Clear all Cache and Providers after each update is Advised
+
+5.0.15
+- Updates for New Tvshows for ArconaiTv
+
 5.0.14
 - Cfscrape Update
 
