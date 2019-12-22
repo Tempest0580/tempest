@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.tempest" version="5.0.17" name="Tempest" provider-name="Tempest">
+<addon id="plugin.video.tempest" version="5.0.18" name="Tempest" provider-name="Tempest">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.tempest.artwork" />
@@ -25,11 +25,7 @@
 		</assets>
 		<news>
 			v5.0.16
-- Updated/Added scrapers. Fixed Episode Sorting
-- Removed Dead Scrapers
-- Removed Direct Scraper until i can find some more good reliable ones
-- Code Clean up
-- Clear all Cache and Providers after each update is Advised
+- Added Channels from Streamlive.to (Testing)
 		</news>
 	</extension>
 </addon>
