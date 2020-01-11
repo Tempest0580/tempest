@@ -33,7 +33,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.tempest" version="5.0.23" name="Tempest" provider-name="Tempest">
+<addon id="plugin.video.tempest" version="5.0.24" name="Tempest" provider-name="Tempest">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.tempest.artwork" />
@@ -58,8 +58,8 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-			v5.0.23
-- Quick update to fix Swatchseries (Thanks to shellc0de27)
+			v5.0.24
+- Quick Fix for Tvdb
 		</news>
 	</extension>
 </addon>
