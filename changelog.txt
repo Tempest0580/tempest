@@ -1,6 +1,10 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 New Repo https://tempest0580.github.io/
 
+5.0.25
+- Small Update for Tvdb
+- Clear all Cache and Providers after each update is Advised
+
 5.0.24
 - Quick Fix for Tvdb
 
