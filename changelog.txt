@@ -1,6 +1,9 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 New Repo https://tempest0580.github.io/
 
+5.0.28
+- Minor Code Update
+
 5.0.27
 - Update to pull Movie info and Artwork for 1 Click Movies
 
