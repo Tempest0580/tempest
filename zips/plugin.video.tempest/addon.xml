@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.tempest" version="5.0.31" name="Tempest" provider-name="Tempest">
+<addon id="plugin.video.tempest" version="5.0.32" name="Tempest" provider-name="Tempest">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.tempest.artwork" />
@@ -24,10 +24,9 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-			v5.0.31
-- Added Torrent cache check for Real Debrid in Torrent settings (Testing)
+			v5.0.32
 - Code Update
-- Scraper Updates
+- Added Label to Identify Cached Torrents
 - Clear all Cache and Providers after each update is Advised
 		</news>
 	</extension>

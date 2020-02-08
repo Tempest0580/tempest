@@ -1,6 +1,11 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 New Repo https://tempest0580.github.io/
 
+5.0.32
+- Code Update
+- Added Label to Identify Cached Torrents
+- Clear all Cache and Providers after each update is Advised
+
 5.0.31
 - Added Torrent cache check for Real Debrid in Torrent settings (Testing)
 - Code Update
