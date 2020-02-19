@@ -33,7 +33,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.tempest" version="5.0.33" name="Tempest" provider-name="Tempest">
+<addon id="plugin.video.tempest" version="5.0.34" name="Tempest" provider-name="Tempest">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.tempest.artwork" />
@@ -58,9 +58,11 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-			v5.0.33
-- Code Update
-- Clear all Cache and Providers after each update is Advised
+			v5.0.34
+- Code Update import Cfscrape (Testing, Should Speed up Scraping a bit. Thanks Tikipeter)
+- Added/Updated Scrapers
+- Update Cfscrape
+- Clear all Cache and Providers after each update is Adviseded
 		</news>
 	</extension>
 </addon>

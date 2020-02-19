@@ -1,6 +1,12 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 New Repo https://tempest0580.github.io/
 
+5.0.34
+- Code Update import Cfscrape (Testing, Should Speed up Scraping a bit. Thanks Tikipeter)
+- Added/Updated Scrapers
+- Update Cfscrape
+- Clear all Cache and Providers after each update is Adviseded
+
 5.0.33
 - Code Update
 - Update for New Tvshows for ArconaiTv
