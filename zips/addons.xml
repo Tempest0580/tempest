@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.37a" provider-name="jsergio">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.38" provider-name="jsergio">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="plugin.video.youtube" optional="true" />
@@ -33,7 +33,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.tempest" version="5.0.34" name="Tempest" provider-name="Tempest">
+<addon id="plugin.video.tempest" version="5.0.35" name="Tempest" provider-name="Tempest">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.tempest.artwork" />
@@ -58,11 +58,9 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-			v5.0.34
-- Code Update import Cfscrape (Testing, Should Speed up Scraping a bit. Thanks Tikipeter)
-- Added/Updated Scrapers
-- Update Cfscrape
-- Clear all Cache and Providers after each update is Adviseded
+			v5.0.35
+- Code Update
+- Updated ResolveUrl
 		</news>
 	</extension>
 </addon>
