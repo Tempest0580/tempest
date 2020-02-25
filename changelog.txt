@@ -1,6 +1,10 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 New Repo https://tempest0580.github.io/
 
+5.0.37
+- Code Update (Add Cfscrape import back lol, I Think It Was What i did that caused the issues with Cached Torrent Check. Thanks Tinuz97)
+- Clear all Cache and Providers after each update is Advised
+
 5.0.36
 - Added Debrid/Non Torrent link check in Debrid settings (Beta Testing)
 - Code Update (Converted Cfscrape import back, Was causing issues with Cached Torrent Check)
