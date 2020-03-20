@@ -1,6 +1,11 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 New Repo https://tempest0580.github.io/
 
+5.0.39
+- Minor Updates to Scrpaers
+- Minor Updates to UstvGo
+- Minor Updates to Acronaitv
+
 5.0.38
 - If your using Cached Torrents of RD Check you will need to turn them on again
 - Fixed UstvGo (Quick and dirty fix, May not last)
