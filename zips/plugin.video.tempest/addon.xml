@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.tempest" version="5.0.41" name="Tempest" provider-name="Tempest">
+<addon id="plugin.video.tempest" version="5.0.42" name="Tempest" provider-name="Tempest">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.tempest.artwork" />
@@ -24,9 +24,8 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-			v5.0.41
-- Minor Update to Foreign and Entertainment live channels
-- Minor Code Update
+			v5.0.42
+- Updated Arconaitv Channels
 		</news>
 	</extension>
 </addon>
