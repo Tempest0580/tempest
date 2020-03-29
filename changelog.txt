@@ -1,6 +1,10 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 New Repo https://tempest0580.github.io/
 
+5.0.43
+- Updated Arconaitv Channels
+- Fix a error some are having opening arconaitv
+
 5.0.42
 - Updated Arconaitv Channels
 
