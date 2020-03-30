@@ -1,6 +1,9 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 New Repo https://tempest0580.github.io/
 
+5.0.55
+- Fix Trailers (Testing)
+
 5.0.44
 - Minor Updates (Forgot to remove some code)
 
