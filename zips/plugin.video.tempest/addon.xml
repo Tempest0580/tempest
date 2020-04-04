@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.tempest" version="5.0.48" name="Tempest" provider-name="Tempest">
+<addon id="plugin.video.tempest" version="5.0.49" name="Tempest" provider-name="Tempest">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.tempest.artwork" />
@@ -24,9 +24,11 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-			v5.0.48
-- Added a few more Youtube Api Key's (Once the quota is hit you will have to wait or use your own)
-- Minor Updates
+			v5.0.49
+- Crude fix for ustvgo, Working on a better fix
+- Added a couple more youtube api keys, Hopefully to help with the amount of users
+- Update Cfscrape
+- Clear all Cache and Providers after each update is Advised
 		</news>
 	</extension>
 </addon>

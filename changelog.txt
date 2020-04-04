@@ -1,6 +1,12 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 New Repo https://tempest0580.github.io/
 
+5.0.49
+- Crude fix for ustvgo, Working on a better fix
+- Added a couple more youtube api keys, Hopefully to help with the amount of users
+- Update Cfscrape
+- Clear all Cache and Providers after each update is Advised
+
 5.0.48
 - Added a few more Youtube Api Key's (Once the quota is hit you will have to wait or use your own)
 - Minor Updates
