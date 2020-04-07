@@ -1,6 +1,10 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 New Repo https://tempest0580.github.io/
 
+5.0.50
+- Fixed Ustvgo (Roll back is working again, Thanks Bjgood for Letting me know)
+- Clear all Cache and Providers after each update is Advised
+
 5.0.49
 - Crude fix for ustvgo, Working on a better fix
 - Added a couple more youtube api keys, Hopefully to help with the amount of users
