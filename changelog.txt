@@ -1,6 +1,14 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 New Repo https://tempest0580.github.io/
 
+[B][COLOR gold] 5.0.51 [/COLOR][/B]
+- Scraper Updates
+- Added a couple new Free Scrapers
+- Removed Dead/Broken Scrapers
+- Added Zynet.tv some channels in liveTv (Still a few more to add)
+- Removed Acronaitv until i can find a fix
+- Clear all Cache and Providers after each update is Advised
+
 5.0.50
 - Fixed Ustvgo (Roll back is working again, Thanks Bjgood for Letting me know)
 - Clear all Cache and Providers after each update is Advised
