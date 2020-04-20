@@ -33,7 +33,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.tempest" version="5.0.52" name="Tempest" provider-name="Tempest">
+<addon id="plugin.video.tempest" version="5.0.53" name="Tempest" provider-name="Tempest">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.tempest.artwork" />
@@ -58,8 +58,9 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-			v5.0.52
-- Added a new Live Tv Source
+			v5.0.53
+- Fixed a couple Scrapers
+- Minor Scraper Updates
 		</news>
 	</extension>
 </addon>
