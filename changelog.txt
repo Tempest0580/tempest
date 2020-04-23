@@ -1,6 +1,12 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 New Repo https://tempest0580.github.io/
 
+5.0.54
+- Fixed a couple Scrapers
+- Changed Scraper Timeout to 90 (Few Scrapers wasn't finished in time because of the amount of scrapers)
+- Added Radio Station Channel to LiveTv Section (Testing)
+- Update Cfscrape
+
 5.0.53
 - Fixed a couple Scrapers
 - Minor Scraper Updates
