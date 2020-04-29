@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.tempest" version="5.0.54" name="Tempest" provider-name="Tempest">
+<addon id="plugin.video.tempest" version="5.0.55" name="Tempest" provider-name="Tempest">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.tempest.artwork" />
@@ -8,6 +8,8 @@
 		<import addon="script.module.requests" />
 		<import addon="script.module.metahandler" />
 		<import addon="script.module.beautifulsoup4" />
+        <import addon="script.module.js2py" />
+        <import addon="script.module.pyjsparser" />
 		<import addon="plugin.video.youtube"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="tempest.py">
@@ -24,11 +26,8 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-			v5.0.54
-- Fixed a couple Scrapers
-- Changed Scraper Timeout to 90 (Few Scrapers wasn't finished in time because of the amount of scrapers)
-- Added Radio Station Channel to LiveTv Section (Testing)
-- Update Cfscrape
+			v5.0.55
+- Fixed ArconaiTv
 		</news>
 	</extension>
 </addon>
