@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.tempest" version="5.0.55" name="Tempest" provider-name="Tempest">
+<addon id="plugin.video.tempest" version="5.0.56" name="Tempest" provider-name="Tempest">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.tempest.artwork" />
@@ -26,8 +26,8 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-			v5.0.55
-- Fixed ArconaiTv
+			v5.0.56
+- ArconaiTv Artwork update
 		</news>
 	</extension>
 </addon>
