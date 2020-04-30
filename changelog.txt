@@ -1,6 +1,11 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 New Repo https://tempest0580.github.io/
 
+5.0.57
+- Update Imkmedia
+- Remove Dead/Broken Scrapers
+- Update Scrapers
+
 5.0.56
 - ArconaiTv Artwork update
 
