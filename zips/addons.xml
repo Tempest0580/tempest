@@ -110,7 +110,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.tempest" version="5.0.58" name="Tempest" provider-name="Tempest">
+<addon id="plugin.video.tempest" version="5.0.59" name="Tempest" provider-name="Tempest">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.tempest.artwork" />
@@ -137,8 +137,8 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-			v5.0.58
-- Update Scrapers
+			v5.0.59
+- ArconaiTv Cosmetic
 		</news>
 	</extension>
 </addon>
