@@ -1,6 +1,14 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 New Repo https://tempest0580.github.io/
 
+
+5.0.61
+- Removed ArconaiTV
+- Updated Scrapers
+- Rename Imkmedia to Myustv
+- Update Myustv
+- Removed Zynetv
+
 5.0.60
 - Quick Update for Cfscrape
 
