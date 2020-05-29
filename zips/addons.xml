@@ -33,7 +33,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.tempest" version="5.0.61" name="Tempest" provider-name="Tempest">
+<addon id="plugin.video.tempest" version="5.0.62" name="Tempest" provider-name="Tempest">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.tempest.artwork" />
@@ -58,12 +58,11 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-			v5.0.61
-- Removed ArconaiTV
-- Updated Scrapers
-- Rename Imkmedia to Myustv
-- Update Myustv
-- Removed Zynetv
+			v5.0.62
+- Update/Added Scrapers
+- Remove Dead/Broken Scrapers
+- Update Cfscrape
+- Clear all Cache and Providers after each update is Advised
 		</news>
 	</extension>
 </addon>

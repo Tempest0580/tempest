@@ -1,6 +1,11 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 New Repo https://tempest0580.github.io/
 
+5.0.62
+- Update/Added Scrapers
+- Remove Dead/Broken Scrapers
+- Update Cfscrape
+- Clear all Cache and Providers after each update is Advised
 
 5.0.61
 - Removed ArconaiTV
