@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.tempest" version="5.0.67" name="Tempest" provider-name="Tempest">
+<addon id="plugin.video.tempest" version="5.0.68" name="Tempest" provider-name="Tempest">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.tempest.artwork" />
@@ -25,10 +25,8 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-			v5.0.67
-- Fixed UstvGo
-- Fixed Myustv
-- Fixed Sports24
+			v5.0.68
+- Fixed Error with Tvshows
 		</news>
 	</extension>
 </addon>
