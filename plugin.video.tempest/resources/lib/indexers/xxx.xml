@@ -1,0 +1,629 @@
+<xml>
+
+
+<item>
+<name>Eporner.com - 4K UHD</name>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+        <title>[makelist.param3]-[B][COLOR blue][makelist.param1][/COLOR][/B]</title>
+        <link>$doregex[playurl]</link>
+        <thumbnail>[makelist.param4]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = ''):
+    from resources.lib.modules import client
+    import re
+    html = ''
+    html += client.request('https://www.eporner.com/cat/4k-porn/')
+    html = re.sub('&#[0-9]+;', '\'', html)
+    html = html.replace('&quot'+';', '"')
+    html = html.replace('&amp;', '&')
+    html = html.replace('&amp;#039;', '&')
+    express = 'mvhdico"><span>(.+?)<\/span>.+?<a\shref="(.+?)"\stitle="(.+?)".+?src="(.+?)"'
+    links = re.compile(express, re.MULTILINE|re.DOTALL).findall(html)
+    return links
+]]></expres>
+<page></page>
+</regex>
+<regex>
+<name>playurl</name>
+<listrepeat><![CDATA[
+        <title>[playurl.param2]</title>
+        <link>https://www.eporner.com[playurl.param1]</link>
+        <thumbnail>[makelist.param4]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = ''):
+    from resources.lib.modules import client
+    import re
+    url = 'https://www.eporner.com' + '[makelist.param2]'
+    html = client.request(url)
+    html = re.sub('Download', 'Play', html)
+    express = '<a href="(\/dload.+?)">(.+?)<\/a>'
+    links = re.compile(express, re.MULTILINE|re.DOTALL).findall(html)
+    return links
+]]></expres>
+<page></page>
+</regex>
+</item>
+
+
+<item>
+<name>Eporner.com - Latest</name>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+        <title>[makelist.param3]-[B][COLOR blue][makelist.param1][/COLOR][/B]</title>
+        <link>$doregex[playurl]</link>
+        <thumbnail>[makelist.param4]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = ''):
+    from resources.lib.modules import client
+    import re
+    html = ''
+    html += client.request('https://www.eporner.com/0/')
+    html += client.request('https://www.eporner.com/1/')
+    html = re.sub('&#[0-9]+;', '\'', html)
+    html = html.replace('&quot'+';', '"')
+    html = html.replace('&amp;', '&')
+    html = html.replace('&amp;#039;', '&')
+    express = 'mvhdico"><span>(.+?)<\/span>.+?<a\shref="(.+?)"\stitle="(.+?)".+?src="(.+?)"'
+    links = re.compile(express, re.MULTILINE|re.DOTALL).findall(html)
+    return links
+]]></expres>
+<page></page>
+</regex>
+<regex>
+<name>playurl</name>
+<listrepeat><![CDATA[
+        <title>[playurl.param2]</title>
+        <link>https://www.eporner.com[playurl.param1]</link>
+        <thumbnail>[makelist.param4]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = ''):
+    from resources.lib.modules import client
+    import re
+    url = 'https://www.eporner.com' + '[makelist.param2]'
+    html = client.request(url)
+    html = re.sub('Download', 'Play', html)
+    express = '<a href="(\/dload.+?)">(.+?)<\/a>'
+    links = re.compile(express, re.MULTILINE|re.DOTALL).findall(html)
+    return links
+]]></expres>
+<page></page>
+</regex>
+</item>
+
+
+<item>
+<name>Amatsonly.com - Latest</name>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+        <title>[makelist.param2]</title>
+        <link>$doregex[playurl]</link>
+        <thumbnail>[makelist.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = ''):
+    from resources.lib.modules import client
+    import re
+    html = ''
+    html += client.request('http://www.amatsonly.com/')
+    html += client.request('http://www.amatsonly.com/?page=2')
+    html += client.request('http://www.amatsonly.com/?page=3')
+    html += client.request('http://www.amatsonly.com/?page=4')
+    html += client.request('http://www.amatsonly.com/?page=5')
+    html += client.request('http://www.amatsonly.com/?page=6')
+    html += client.request('http://www.amatsonly.com/?page=7')
+    html += client.request('http://www.amatsonly.com/?page=8')
+    html = re.sub('&#[0-9]+;', '\'', html)
+    html = html.replace('&quot'+';', '"')
+    html = html.replace('&amp;', '&')
+    html = html.replace('&amp;#039;', '&')
+    express = '<div class="col-sm-6 col-md-6">\n.+?\n.+?\n.+?<h4><a\shref="(.+?)"\stitle="(.+?)".+?\n.+?\n.+?\n.+?src="(.+?)"'
+    links = re.compile(express, re.MULTILINE|re.DOTALL).findall(html)
+    return links
+]]></expres>
+<page></page>
+</regex>
+<regex>
+<name>playurl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = ''):
+    from resources.lib.modules import client
+    import re
+    url = '[makelist.param1]'
+    html = client.request(url)
+    express = '<source src="(.+?)" type=\'video\/mp4\' \/>'
+    links = re.compile(express, re.MULTILINE|re.DOTALL).findall(html)[0]
+    return links
+]]></expres>
+<page></page>
+</regex>
+</item>
+
+
+<item>
+<name>Yuvutu.com - Latest</name>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+        <title>[makelist.param3]</title>
+        <link>$doregex[playurl]</link>
+        <thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = ''):
+    from resources.lib.modules import client
+    import re
+    html = ''
+    html += client.request('http://www.yuvutu.com/index.php?name=Video&op=videos&list=most_recent')
+    html += client.request('http://www.yuvutu.com/modules.php?name=Video&op=videos&list=most_recent&period=last_week&filter=0&channel=1&style=1&page=2&category=0&country_code=&min_length=0')
+    html += client.request('http://www.yuvutu.com/modules.php?name=Video&op=videos&list=most_recent&period=last_week&filter=0&channel=1&style=1&page=3&category=0&country_code=&min_length=0')
+    html = re.sub('&#[0-9]+;', '\'', html)
+    html = html.replace('&quot'+';', '"')
+    html = html.replace('&amp;', '&')
+    html = html.replace('&amp;#039;', '&')
+    express = '<a\shref="\/(video.+?)".+?src="(.+?)".+?title="(.+?)"\s\/><\/a>'
+    links = re.compile(express, re.MULTILINE|re.DOTALL).findall(html)
+    return links
+]]></expres>
+<page></page>
+</regex>
+<regex>
+<name>playurl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = ''):
+    from resources.lib.modules import client
+    import re
+    main = 'http://www.yuvutu.com/' + '[makelist.param1]'
+    html = client.request(main)
+    html = html.replace('\\', '')
+    express = '<iframe\ssrc="(\/embed.+?)"'
+    links = re.compile(express, re.MULTILINE|re.DOTALL).findall(html)[0]
+    embed = 'http://www.yuvutu.com' + links
+    html = client.request(embed)
+    express2 = 'file: "(.+?)"'
+    play = re.compile(express2, re.MULTILINE|re.DOTALL).findall(html)[0]
+    return play
+]]></expres>
+<page></page>
+</regex>
+</item>
+
+
+<item>
+<name>MomXXX.org - Latest</name>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+<title>[makelist.param2]</title>
+<link>$doregex[playurl]</link>
+<thumbnail>[makelist.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = ''):
+    from resources.lib.modules import client
+    import re
+    html = ''
+    html += client.request('http://momxxx.org/')
+    html += client.request('http://momxxx.org/page/2/')
+    html += client.request('http://momxxx.org/page/3/')
+    html = re.sub('&#[0-9]+;', '\'', html)
+    html = html.replace('&quot'+';', '"')
+    html = html.replace('&amp;', '&')
+    express = 'href="(.+?)".+?title="(.+?)">.+?data-src="(.+?)"'
+    links = re.compile(express, re.MULTILINE|re.DOTALL).findall(html)
+    return links
+]]></expres>
+<page></page>
+</regex>
+<regex>
+<name>playurl</name>
+<expres><![CDATA[<source src="(.+?)"]]></expres>
+<page>[makelist.param1]</page>
+</regex>
+</item>
+
+
+<item>
+<title>Youramateurporn.com - Featured</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR red][makelist.param3][/COLOR]:[COLOR yellow][makelist.param4][/COLOR]</title>
+        <link>$doregex[getsrccosmix]</link>
+        <thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[<a href="(.+?)".*\n.*\n.+img src="(.+?)" alt="(.+?)".*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.+views">(.+?)<]]></expres>
+<page>http://www.youramateurporn.com/most-recent/</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getsrccosmix</name>
+<expres><![CDATA[<source src="(.+?)" type='video/mp4'>]]></expres>
+<page>[makelist.param1]</page>
+</regex>
+</item>
+
+
+<item>
+<title>collectionofbestporn.com - Most Viewed</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR yellow][makelist.param3][/COLOR]</title>
+        <link>$doregex[cosmix]</link>
+        <thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[<a href="(.+?)".*\n.*\n.*\n.*\n.+?img src="(.+?)" title="(.+?)"]]></expres>
+<page>http://collectionofbestporn.com/most-viewed</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>cosmix</name>
+<expres><![CDATA[<source src="(.+?)" type='video/mp4']]></expres>
+<page>[makelist.param1]</page>
+<cookieJar></cookieJar>
+</regex>
+</item>
+
+
+<item>
+<title>WATCHmynewGF - Latest</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR red][makelist.param4][/COLOR][COLOR yellow][makelist.param3][/COLOR]</title>
+        <link>$doregex[getsrccosmix]</link>
+        <thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[<a href="(.+?)".*\n.+img src="(.+?)".*\n.+<b>(.+?)<\/b.*\n.+p>(.+?)<]]></expres>
+<page>http://watchmynewgf.com/</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getsrccosmix</name>
+<expres><![CDATA[video_url: '(.+?)']]></expres>
+<page>http://watchmynewgf.com[makelist.param1]</page>
+</regex>
+</item>
+
+
+<item>
+<name>Motherless.com - Latest</name>
+<link>$doregex[makelist]</link>
+<regex>
+<name>makelist</name>
+<listrepeat><![CDATA[
+        <title>[makelist.param3]</title>
+        <link>$doregex[playurl]</link>
+        <thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = ''):
+    from resources.lib.modules import client
+    import re
+    html = ''
+    html += client.request('http://motherless.com/videos/recent')
+    html += client.request('http://motherless.com/videos/recent?page=2')
+    html = re.sub('&#[0-9]+;', '\'', html)
+    html = html.replace('&quot'+';', '"')
+    html = html.replace('&amp;', '&')
+    html = html.replace('&amp;#039;', '&')
+    html = html.split('<h1>\n.+?Most\sRecent\sVideos', 1)[-1]
+    html = html.split('<div class=\'pagination_link\'>', 1)[0]
+    express = '<div class="thumb-container.+?\n.+?<a\shref="(.+?)".+?\n.+?src="(.+?)".+?alt="(.+?)"'
+    links = re.compile(express, re.MULTILINE|re.DOTALL).findall(html)
+    return links
+]]></expres>
+<page></page>
+</regex>
+<regex>
+<name>playurl</name>
+<expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = ''):
+    from resources.lib.modules import client
+    import re
+    main = '[makelist.param1]'
+    html = client.request(main)
+    express = 'fileurl = \'(.+?)\''
+    links = re.compile(express, re.MULTILINE|re.DOTALL).findall(html)[0]
+    return links
+]]></expres>
+<page></page>
+</regex>
+</item>
+
+
+<item>
+<title>PornRabbit.com - Latest</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR red][makelist.param2][/COLOR]</title>
+        <link>$doregex[getsrccosmix]</link>
+        <thumbnail>[makelist.param3]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[<a href="(.+?)" title="(.+?)".*\n.*\n.*\n.*\n.+src="(.+?)"]]></expres>
+<page>http://www.pornrabbit.com/videos/</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getsrccosmix</name>
+<expres><![CDATA[file: '(.+mp4.+?)']]></expres>
+<page>http://www.pornrabbit.com[makelist.param1]</page>
+</regex>
+</item>
+
+
+<item>
+<title>Xvideos - Latest</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR red][makelist.param3][/COLOR]</title>
+        <link>$doregex[getsrccosmix]</link>
+        <thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[div id.+<a href="(.+?)".+img src="(.+?)".+title="(.+?)">]]></expres>
+<page>http://www.xvideos.com/</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getsrccosmix</name>
+<expres><![CDATA[setVideoUrlHigh\('(.+?)'\)]]></expres>
+<page>http://www.xvideos.com[makelist.param1]</page>
+</regex>
+</item>
+
+
+<item>
+<title>Xvideos - Most Popular</title>
+<link>$doregex[makelist]</link>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR red][makelist.param3][/COLOR]</title>
+        <link>$doregex[getsrccosmix]</link>
+        <thumbnail>[makelist.param2]</thumbnail>
+]]></listrepeat>
+<expres><![CDATA[div id.+<a href="(.+?)".+img src="(.+?)".+title="(.+?)">]]></expres>
+<page>http://www.xvideos.com/best/month/</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getsrccosmix</name>
+<expres><![CDATA[setVideoUrlHigh\('(.+?)'\)]]></expres>
+<page>http://www.xvideos.com[makelist.param1]</page>
+</regex>
+</item>
+
+
+<item>
+    <name>3movs.com - Latest</name>
+    <link>$doregex[makelist]</link>
+    <thumbnail></thumbnail>
+    <regex>
+        <name>makelist</name>
+        <listrepeat><![CDATA[
+            <title>[makelist.param2]:[makelist.param4]</title>
+            <link>$doregex[playurl]</link>
+            <thumbnail>[makelist.param3]</thumbnail>]]>
+        </listrepeat>
+        <expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = ''):
+    from resources.lib.modules import client,cache,workers
+    import re
+    class page:
+        def run(self, r):
+            threads = [] ; self.r = [] ; r = [(r.index(i)+1, i) for i in r]
+            for i in r: threads.append(workers.Thread(self.request, i))
+            [i.start() for i in threads] ; [i.join() for i in threads]
+            return ''.join([str(i[1]) for i in sorted(self.r, key=lambda x: x[0])])
+        def request(self, i):
+            self.r += [(i[0], str(client.request(i[1])))]
+    url = []
+    for i in range(1, 3): url += ['https://www.3movs.com/latest-updates/' + str(i)]
+    u = cache.get(page().run, 0, url)
+    link = client.parseDOM(u, 'div', attrs = {'class': 'item'})
+    link = [(client.parseDOM(i, 'a', ret='href')[0] , client.parseDOM(i, 'a', ret='title')[0] , client.parseDOM(i, 'img', ret='data-src')[0] , client.parseDOM(i, 'span', attrs = {'class': 'time'})[0]) for i in link]
+    link = [(i[0], i[1], i[2], i[3]) for i in link if i[0] and i[1] and i[2] and i[3]]
+    link = [(client.replaceHTMLCodes(i[0]).encode('utf-8'), client.replaceHTMLCodes(i[1]).encode('utf-8'), client.replaceHTMLCodes(i[2]).encode('utf-8'), client.replaceHTMLCodes(i[3]).encode('utf-8')) for i in link]
+    return link
+]]></expres>
+        <page></page>
+    </regex>
+    <regex>
+        <name>playurl</name>
+        <expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = ''):
+    from resources.lib.modules import client
+    import re
+    url = '[makelist.param1]'
+    from resources.lib.modules import control
+    adultresolver = control.cdnImport('https://localhost/xmls/3.xml', 'adultresolver')
+    adultresolver = adultresolver.streamer()
+    url = adultresolver.resolve(url)
+    return url
+]]></expres>
+        <page></page>
+    </regex>
+</item>
+
+
+<item>
+    <name>4tube.com - Latest</name>
+    <link>$doregex[makelist]</link>
+    <thumbnail></thumbnail>
+    <regex>
+        <name>makelist</name>
+        <listrepeat><![CDATA[
+            <title>[makelist.param3] [makelist.param4]</title>
+            <link>$doregex[playurl]</link>
+            <thumbnail>[makelist.param2]</thumbnail>]]>
+        </listrepeat>
+        <expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = ''):
+    from resources.lib.modules import cache,client,workers
+    import re,urllib,xbmc,xbmcgui
+
+    class page:
+        def run(self, r):
+            threads = [] ; self.r = [] ; r = [(r.index(i)+1, i) for i in r]
+            for i in r: threads.append(workers.Thread(self.request, i))
+            [i.start() for i in threads] ; [i.join() for i in threads]
+            return ''.join([str(i[1]) for i in sorted(self.r, key=lambda x: x[0])])
+        def request(self, i):
+            self.r += [(i[0], client.request(i[1]))]
+
+    url = 'https://www.4tube.com/videos?p='
+    u = []
+    for i in range(1, 5): u += [url + str(i) + '&sort=date']
+    u = cache.get(page().run, 24, u)
+    e = client.parseDOM(u, 'div', attrs = {'class': 'col thumb_video'})
+    e = [(client.parseDOM(i, 'a', ret='href')[0] , client.parseDOM(i, 'img', ret='data-master')[0] , client.parseDOM(i, 'img', ret='alt')[0] , client.parseDOM(i, 'li', attrs = {'class': 'duration-top'})[0]) for i in e]
+    e = [('https://www.4tube.com'+i[0],i[1],i[2],i[3]) for i in e if 'pornerbros' not in i[0]]
+    return e
+]]></expres>
+        <page></page>
+    </regex>
+    <regex>
+        <name>playurl</name>
+        <expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = ''):
+    from resources.lib.modules import client
+    import re
+    url = '[makelist.param1]'
+    from resources.lib.modules import control
+    adultresolver = control.cdnImport('https://localhost/xmls/3.xml', 'adultresolver')
+    adultresolver = adultresolver.streamer()
+    url = adultresolver.resolve(url)
+    return url
+]]></expres>
+        <page></page>
+    </regex>
+</item>
+
+
+<item>
+    <title>Boobsandtits.co.uk - Latest</title>
+    <link>$doregex[makelist]</link>
+    <thumbnail></thumbnail>
+    <regex>
+        <name>makelist</name>
+        <listrepeat><![CDATA[
+            <title>[B][makelist.param2][/B]</title>
+            <link>$doregex[playurl]</link>
+            <thumbnail>[makelist.param3]</thumbnail>]]>
+        </listrepeat>
+        <expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = ''):
+    from resources.lib.modules import client
+    import re, urllib, xbmc, xbmcgui
+
+    main = ''
+    main += client.request('https://boobsandtits.co.uk/?order=newest')
+    main += client.request('https://boobsandtits.co.uk/page/2/?order=newest')
+    main += client.request('https://boobsandtits.co.uk/page/3/?order=newest')
+    link = client.parseDOM(main, 'li', attrs = {'class': 'thumi'})
+    link = [(client.parseDOM(i, 'a', ret='href')[0] , client.parseDOM(i, 'a', ret='title')[0] , client.parseDOM(i, 'img', ret='src')[0]) for i in link]
+    link = [(client.replaceHTMLCodes(i[0]), client.replaceHTMLCodes(i[1]), client.replaceHTMLCodes(i[2])) for i in link]
+    link = [(i[0].encode('utf-8'), i[1].encode('utf-8'), i[2].encode('utf-8')) for i in link]
+    return link
+]]></expres>
+        <page></page>
+    </regex>
+    <regex>
+        <name>playurl</name>
+        <expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = ''):
+    from resources.lib.modules import client
+    import re
+
+    url = '[makelist.param1]'
+    from resources.lib.modules import control
+    adultresolver = control.cdnImport('https://localhost/xmls/3.xml', 'adultresolver')
+    adultresolver = adultresolver.streamer()
+    url = adultresolver.resolve(url)
+    return url
+]]></expres>
+        <page></page>
+    </regex>
+</item>
+
+
+<item>
+    <name>Fuqer.com - Latest</name>
+    <link>$doregex[makelist]</link>
+    <thumbnail></thumbnail>
+    <regex>
+        <name>makelist</name>
+        <listrepeat><![CDATA[
+            <title>[makelist.param3]</title>
+            <link>$doregex[playurl]</link>
+            <thumbnail>[makelist.param2]</thumbnail>]]>
+        </listrepeat>
+        <expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = ''):
+    from resources.lib.modules import cache,client,workers
+    import re,urllib,xbmc,xbmcgui
+
+    class page:
+        def run(self, r):
+            threads = [] ; self.r = [] ; r = [(r.index(i)+1, i) for i in r]
+            for i in r: threads.append(workers.Thread(self.request, i))
+            [i.start() for i in threads] ; [i.join() for i in threads]
+            return ''.join([str(i[1]) for i in sorted(self.r, key=lambda x: x[0])])
+        def request(self, i):
+            self.r += [(i[0], client.request(i[1]))]
+
+    url = 'https://www.fuqer.com/most-recent/page'
+    u = []
+    for i in range(1, 5): u += [url + str(i) + '.html']
+    u = cache.get(page().run, 24, u)
+    e = client.parseDOM(u, 'div', attrs = {'class': 'content-index'})
+    e = [(client.parseDOM(i, 'a', ret='href')[0] , client.parseDOM(i, 'img', ret='data-src')[0] , client.parseDOM(i, 'img', ret='alt')[0]) for i in e]
+    e = [(client.replaceHTMLCodes(i[0]), client.replaceHTMLCodes(i[1]), client.replaceHTMLCodes(i[2])) for i in e]
+    return e
+]]></expres>
+        <page></page>
+    </regex>
+    <regex>
+        <name>playurl</name>
+        <listrepeat><![CDATA[
+            <title>[playurl.param2]</title>
+            <link>[playurl.param1]</link>
+            <thumbnail>[makelist.param2]</thumbnail>]]>
+        </listrepeat>
+        <expres><![CDATA[#$pyFunction
+def GetLSProData(page_data,Cookie_Jar,m,url = ''):
+    from resources.lib.modules import client
+    import re
+    url = '[makelist.param1]'
+    from resources.lib.modules import control
+    adultresolver = control.cdnImport('https://localhost/xmls/3.xml', 'adultresolver')
+    adultresolver = adultresolver.streamer()
+    url = adultresolver.resolve(url)
+    return url
+]]></expres>
+        <page></page>
+    </regex>
+</item>
+
+
+</xml>
