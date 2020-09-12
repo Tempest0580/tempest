@@ -1,6 +1,9 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 New Repo https://tempest0580.github.io/
 
+[B][COLOR gold] 5.0.70 [/COLOR][/B]
+- Fixed UstvGo (Thanks Fedevx for the fix)
+
 [B][COLOR gold] 5.0.69 [/COLOR][/B]
 - Fixed UstvGo
 
