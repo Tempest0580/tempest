@@ -2,6 +2,9 @@ Report any issues at https://github.com/Tempest0580/tempest/issues
 New Repo https://tempest0580.github.io/
 
 [B][COLOR gold] 5.0.71 [/COLOR][/B]
+- Fix Error
+
+[B][COLOR gold] 5.0.71 [/COLOR][/B]
 - Updated/Added Scrapers
 
 [B][COLOR gold] 5.0.70 [/COLOR][/B]
