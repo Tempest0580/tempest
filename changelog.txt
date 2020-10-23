@@ -1,6 +1,9 @@
 Report any issues at https://github.com/Tempest0580/tempest/issues
 New Repo https://tempest0580.github.io/
 
+[B][COLOR gold] 5.0.75 [/COLOR][/B]
+- Fixed UstvGo
+
 [B][COLOR gold] 5.0.74 [/COLOR][/B]
 - Updated Scrapers/Removed Dead Scrapers(More Updates to come Soon)
 - Fixed most Foregin Channels for now(Will update soon)
