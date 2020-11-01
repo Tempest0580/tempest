@@ -43,7 +43,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.tempest" version="5.0.76" name="Tempest" provider-name="Tempest">
+<addon id="plugin.video.tempest" version="5.0.77" name="Tempest" provider-name="Tempest">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.tempest.artwork" />
@@ -70,8 +70,9 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-			v5.0.76
-- Fix UstvGo (Thanks Fedevx)
+			v5.0.77
+- Updated Foregin Channels
+- Updated YourSpors
 		</news>
 	</extension>
 </addon>
@@ -122,7 +123,7 @@
   </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.10" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.12" provider-name="gujal">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
         <import addon="script.module.six" version="0.0.1"/>
