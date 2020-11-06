@@ -1,23 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="script.module.pyjsparser" name="pyjsparser" version="2.7.3" provider-name="Addons4Kodi">
-  <requires>
-    <import addon="xbmc.python" version="2.25.0"/>
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary>Pure Python JavaScript Translator/Interpreter</summary>
-    <description>Packed for Kodi from https://github.com/PiotrDabkowski/pyjsparser</description>
-    <platform>all</platform>
-    <language></language>
-    <license>MIT</license>
-    <forum></forum>
-    <website>https://github.com/PiotrDabkowski/pyjsparser</website>
-    <source>https://github.com/PiotrDabkowski/pyjsparser</source>
-    <email></email>
-  </extension>
-</addon>
-
 <addon id="script.module.tzlocal"
        name="tzlocal"
        version="2.0.0"
@@ -40,86 +22,6 @@
     <assets>
       <icon>resources/icon.png</icon>
     </assets>
-  </extension>
-</addon>
-
-<addon id="plugin.video.tempest" version="5.0.77" name="Tempest" provider-name="Tempest">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0" />
-		<import addon="script.tempest.artwork" />
-		<import addon="script.tempest.metadata" />
-		<import addon="script.module.resolveurl" />
-		<import addon="script.module.requests" />
-		<import addon="script.module.metahandler" />
-		<import addon="script.module.js2py" />
-        <import addon="script.module.pyjsparser" />
-		<import addon="script.module.beautifulsoup4" />
-		<import addon="plugin.video.youtube"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="tempest.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.service" library="service.py" start="startup" />
-	<extension point="xbmc.addon.metadata">
-		<description lang="en">[I][B]Tempest Movies and TV[/B][/I][CR][CR]This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR][CR]The author does not host any of the content in this addon and takes no responsibility for content found.</description>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-		<news>
-			v5.0.77
-- Updated Foregin Channels
-- Updated YourSpors
-		</news>
-	</extension>
-</addon>
-
-<addon id="repository.tempest" name="Tempest Repo" version="0.0.5" provider-name="Tempest">
-	<extension point="xbmc.addon.repository" name="Tempest Repo">
-        <info compressed="false">https://raw.githubusercontent.com/Tempest0580/tempest/master/zips/addons.xml</info>
-	    <checksum>https://raw.githubusercontent.com/Tempest0580/tempest/master/zips/addons.xml.md5</checksum>
-	    <datadir zip="true">https://raw.githubusercontent.com/Tempest0580/tempest/master/zips/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">kodi addon</summary>
-		<description lang="en">Watch Movies and Tv Shows</description>
-		<genre>movies,tvshows,usa</genre>
-	</extension>
-</addon>
-
-<addon id="script.tempest.metadata" version="1.0.1" name="Tempest Metadata" provider-name="Tempest">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary>Metadata for the Tempest Addon</summary>
-		<description>Metadata for Tempest are maintained separately to make distribution of the the addon itself easier/faster.</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="script.module.js2py" name="js2py" version="0.6.7" provider-name="Addons4Kodi">
-  <requires>
-    <import addon="xbmc.python" version="2.25.0"/>
-    <import addon="script.module.six" version="1.11.0"/>
-    <import addon="script.module.pyjsparser" version="2.7.1"/>
-    <import addon="script.module.tzlocal" version="1.5.1"/>
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary>Pure Python JavaScript Translator/Interpreter</summary>
-    <description>Packed for Kodi from https://github.com/PiotrDabkowski/Js2Py</description>
-    <platform>all</platform>
-    <language></language>
-    <license>MIT</license>
-    <forum></forum>
-    <website>https://github.com/PiotrDabkowski/Js2Py</website>
-    <source>https://github.com/PiotrDabkowski/Js2Py</source>
-    <email></email>
   </extension>
 </addon>
 
@@ -152,6 +54,58 @@
     </extension>
 </addon>
 
+<addon id="plugin.video.tempest" version="5.0.78" name="Tempest" provider-name="Tempest">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.tempest.artwork" />
+		<import addon="script.tempest.metadata" />
+		<import addon="script.module.resolveurl" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.metahandler" />
+		<import addon="script.module.js2py" />
+        <import addon="script.module.pyjsparser" />
+		<import addon="script.module.beautifulsoup4" />
+		<import addon="plugin.video.youtube"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="tempest.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<description lang="en">[I][B]Tempest Movies and TV[/B][/I][CR][CR]This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR][CR]The author does not host any of the content in this addon and takes no responsibility for content found.</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>
+			v5.0.78
+- Updated UstvGo (Thanks jigoop1)
+- Minor Trailers Update
+		</news>
+	</extension>
+</addon>
+
+<addon id="script.module.pyjsparser" name="pyjsparser" version="2.7.3" provider-name="Addons4Kodi">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Pure Python JavaScript Translator/Interpreter</summary>
+    <description>Packed for Kodi from https://github.com/PiotrDabkowski/pyjsparser</description>
+    <platform>all</platform>
+    <language></language>
+    <license>MIT</license>
+    <forum></forum>
+    <website>https://github.com/PiotrDabkowski/pyjsparser</website>
+    <source>https://github.com/PiotrDabkowski/pyjsparser</source>
+    <email></email>
+  </extension>
+</addon>
+
 <addon id="script.tempest.artwork" version="1.0.2" name="Tempest Artwork" provider-name="Tempest">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
@@ -164,6 +118,40 @@
 	</extension>
 </addon>
 
+<addon id="repository.tempest" name="Tempest Repo" version="0.0.5" provider-name="Tempest">
+	<extension point="xbmc.addon.repository" name="Tempest Repo">
+        <info compressed="false">https://raw.githubusercontent.com/Tempest0580/tempest/master/zips/addons.xml</info>
+	    <checksum>https://raw.githubusercontent.com/Tempest0580/tempest/master/zips/addons.xml.md5</checksum>
+	    <datadir zip="true">https://raw.githubusercontent.com/Tempest0580/tempest/master/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">kodi addon</summary>
+		<description lang="en">Watch Movies and Tv Shows</description>
+		<genre>movies,tvshows,usa</genre>
+	</extension>
+</addon>
+
+<addon id="script.module.js2py" name="js2py" version="0.6.7" provider-name="Addons4Kodi">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+    <import addon="script.module.six" version="1.11.0"/>
+    <import addon="script.module.pyjsparser" version="2.7.1"/>
+    <import addon="script.module.tzlocal" version="1.5.1"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Pure Python JavaScript Translator/Interpreter</summary>
+    <description>Packed for Kodi from https://github.com/PiotrDabkowski/Js2Py</description>
+    <platform>all</platform>
+    <language></language>
+    <license>MIT</license>
+    <forum></forum>
+    <website>https://github.com/PiotrDabkowski/Js2Py</website>
+    <source>https://github.com/PiotrDabkowski/Js2Py</source>
+    <email></email>
+  </extension>
+</addon>
+
 <addon id="repository.temptv" name="Temptv Repo" version="0.0.5" provider-name="Tempest">
 	<extension point="xbmc.addon.repository" name="Tempest Repo">
         <info compressed="false">https://raw.githubusercontent.com/Tempest0580/temptv/master/zips/addons.xml</info>
@@ -174,6 +162,18 @@
 		<summary lang="en">kodi addon</summary>
 		<description lang="en">Watch Live Tv</description>
 		<genre>live tv</genre>
+	</extension>
+</addon>
+
+<addon id="script.tempest.metadata" version="1.0.1" name="Tempest Metadata" provider-name="Tempest">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the Tempest Addon</summary>
+		<description>Metadata for Tempest are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
 	</extension>
 </addon>
 </addons>
