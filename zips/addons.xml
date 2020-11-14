@@ -25,14 +25,15 @@
   </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.12" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.13" provider-name="gujal">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
-        <import addon="script.module.six" version="0.0.1"/>
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
         <import addon="plugin.video.youtube" optional="true" />
         <import addon="script.module.python.twitch" optional="true" />
         <import addon="script.module.cryptopy" version="1.2.6" optional="true" />
-        <import addon="plugin.video.gdrive" optional="true" />
+        <import addon="plugin.googledrive" optional="true" />
     </requires>
     <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.python.pluginsource" library="lib/default.py" />
@@ -54,7 +55,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.tempest" version="5.0.78" name="Tempest" provider-name="Tempest">
+<addon id="plugin.video.tempest" version="5.0.79" name="Tempest" provider-name="Tempest">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.tempest.artwork" />
@@ -81,9 +82,10 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-			v5.0.78
-- Updated UstvGo (Thanks jigoop1)
-- Minor Trailers Update
+			v5.0.79
+- Added Scrapers
+- Updated Scrapers
+- Removed Dead Scrapers
 		</news>
 	</extension>
 </addon>
