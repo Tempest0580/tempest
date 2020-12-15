@@ -77,7 +77,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.tempest" version="5.0.80" name="Tempest" provider-name="Tempest">
+<addon id="plugin.video.tempest" version="5.0.81" name="Tempest" provider-name="Tempest">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.tempest.artwork" />
@@ -104,11 +104,8 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-			v5.0.80
-- Updated UstvGo (Thanks jigoop1)
-- Removed Myustv
-- Added Allsprk
-- Minor Update
+			v5.0.81
+- Added Scapers
 		</news>
 	</extension>
 </addon>
