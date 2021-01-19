@@ -77,7 +77,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.tempest" version="5.0.86" name="Tempest" provider-name="Tempest">
+<addon id="plugin.video.tempest" version="5.0.87" name="Tempest" provider-name="Tempest">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.tempest.artwork" />
@@ -104,9 +104,9 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-			v5.0.86
+			v5.0.87
+- UstvGo Fix
 - Scraper Updates
-- Remove Dead/Broken Scrapers
 		</news>
 	</extension>
 </addon>
@@ -148,7 +148,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.21" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.22" provider-name="gujal">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
         <import addon="script.module.six" />
